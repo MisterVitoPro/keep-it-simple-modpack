@@ -14,3 +14,6 @@ CurseForge/
 # Claude Code project config
 .claude/
 docs/plan-runner/
+
+# Playwright MCP session artifacts
+.playwright-mcp/
