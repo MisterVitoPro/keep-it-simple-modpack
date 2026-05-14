@@ -31,6 +31,11 @@ hash = "5153fb13818db0c9007e8441b256377a539701202c494ca1cef334128ea04a44"
 metafile = true
 
 [[files]]
+file = "mods/cristel-lib.pw.toml"
+hash = "370ff700c72407ac33b157679f89492e5df551f02125c061777b6ea50e9fe16e"
+metafile = true
+
+[[files]]
 file = "mods/distanthorizons.pw.toml"
 hash = "fbf613d3620c38eb4cf89d28bb4aa98beb325d53a4b55d8385fc0c9d0a60d654"
 metafile = true
@@ -152,7 +157,12 @@ metafile = true
 
 [[files]]
 file = "mods/statuseffecttimer.pw.toml"
-hash = "0c8b2f238e0aa73f82fcdc09e0f78a298689d40e84cae244ea39e8a5d860b585"
+hash = "3e1f727a910289c9c4177ee9c2c497eaee63e9015aedd1defd753e79a82eee92"
+metafile = true
+
+[[files]]
+file = "mods/towns-and-towers.pw.toml"
+hash = "846f5b4f01c45f958ad22a94edc7186e33ac6ab124e45dfbcffd1f2161463cca"
 metafile = true
 
 [[files]]
