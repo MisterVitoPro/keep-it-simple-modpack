@@ -1,0 +1,60 @@
+name: Mod Request
+description: Request a mod to be added to the pack
+labels: ["mod-request"]
+body:
+  - type: input
+    id: mod-name
+    attributes:
+      label: Mod name
+    validations:
+      required: true
+  - type: input
+    id: modrinth-url
+    attributes:
+      label: Modrinth URL
+      placeholder: "https://modrinth.com/mod/..."
+    validations:
+      required: true
+  - type: checkboxes
+    id: mc-versions
+    attributes:
+      label: Target MC versions
+      options:
+        - label: "1.20.1"
+        - label: "1.21.1"
+        - label: "1.21.4"
+        - label: "1.21.11"
+        - label: "26.1.2"
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - Optimizations
+        - Visual
+        - Utility
+        - Functional
+        - Libraries
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why does this fit the pack?
+      description: >
+        Keep It Simple focuses on performance, visual enhancements, and
+        vanilla-compatible quality-of-life improvements. Heavy gameplay
+        changes are out of scope.
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      options:
+        - label: The mod is available on Modrinth
+          required: true
+        - label: The mod is Fabric-compatible
+          required: true
+        - label: The mod does not significantly alter vanilla gameplay
+          required: true

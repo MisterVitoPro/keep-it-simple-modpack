@@ -1,0 +1,138 @@
+name: Publish
+
+on:
+  push:
+    tags:
+      - 'v[0-9]+.[0-9]+.[0-9]+'
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Detect changed versions
+        id: detect
+        run: |
+          PREV=$(git describe --tags --abbrev=0 HEAD^ 2>/dev/null || echo "")
+          echo "Previous tag: ${PREV:-none}"
+
+          CHANGED=""
+          for v in 1.20.1 1.21.1 1.21.4 1.21.11 26.1.2; do
+            if [ -z "$PREV" ] || ! git diff --quiet "$PREV"..HEAD -- "Packwiz/$v/" 2>/dev/null; then
+              CHANGED="${CHANGED} ${v}"
+            fi
+          done
+          CHANGED="${CHANGED# }"
+
+          echo "changed=${CHANGED}" >> "$GITHUB_OUTPUT"
+          if [ -n "$CHANGED" ]; then
+            echo "has_changes=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "has_changes=false" >> "$GITHUB_OUTPUT"
+          fi
+          echo "Changed versions: ${CHANGED:-none}"
+
+      - name: Nothing changed — skip release
+        if: steps.detect.outputs.has_changes == 'false'
+        run: |
+          echo "No Packwiz version directories changed since the previous tag. Skipping release."
+          exit 0
+
+      - name: Install packwiz
+        if: steps.detect.outputs.has_changes == 'true'
+        env:
+          PACKWIZ_VERSION: '0.6.1'
+        run: |
+          # Check https://github.com/packwiz/packwiz/releases for the latest stable version
+          # and update PACKWIZ_VERSION above. The pack uses pack-format packwiz:1.1.0 which
+          # requires packwiz >= 0.6.0. Verify the exact asset filename on the release page
+          # before pinning — it is typically "packwiz_linux_amd64" (no extension).
+          curl -fsSL \
+            "https://github.com/packwiz/packwiz/releases/download/v${PACKWIZ_VERSION}/packwiz_linux_amd64" \
+            -o packwiz
+          chmod +x packwiz
+          sudo mv packwiz /usr/local/bin/packwiz
+          packwiz --version
+
+      - name: Build mrpacks
+        if: steps.detect.outputs.has_changes == 'true'
+        run: |
+          mkdir -p dist
+          TAG="${GITHUB_REF_NAME}"
+          for v in ${{ steps.detect.outputs.changed }}; do
+            echo "=== Building ${v} ==="
+            (cd "Packwiz/${v}" && packwiz modrinth export \
+              -o "../../dist/keep-it-simple-${v}-${TAG}.mrpack" --yes)
+            ls -lh "dist/keep-it-simple-${v}-${TAG}.mrpack"
+          done
+
+      - name: Extract changelog body
+        if: steps.detect.outputs.has_changes == 'true'
+        id: changelog
+        run: |
+          BODY=$(awk '/^## \[/{if(p) exit; p=1; next} p' CHANGELOG.md)
+          {
+            echo "body<<CHANGELOG_EOF"
+            echo "$BODY"
+            echo "CHANGELOG_EOF"
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Create GitHub Release
+        if: steps.detect.outputs.has_changes == 'true'
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ github.ref_name }}
+          name: ${{ github.ref_name }}
+          body: ${{ steps.changelog.outputs.body }}
+          files: dist/*.mrpack
+
+      - name: Publish to Modrinth
+        if: steps.detect.outputs.has_changes == 'true'
+        env:
+          MODRINTH_TOKEN: ${{ secrets.MODRINTH_TOKEN }}
+          MODRINTH_PROJECT_ID: ${{ vars.MODRINTH_PROJECT_ID }}
+          TAG: ${{ github.ref_name }}
+          CHANGED: ${{ steps.detect.outputs.changed }}
+          CHANGELOG_BODY: ${{ steps.changelog.outputs.body }}
+        run: |
+          VERSION="${TAG#v}"
+          for v in $CHANGED; do
+            MRPACK="dist/keep-it-simple-${v}-${TAG}.mrpack"
+            echo "=== Uploading ${v} to Modrinth ==="
+
+            DATA=$(jq -n \
+              --arg name "${TAG} — ${v}" \
+              --arg version_number "${VERSION}-${v}" \
+              --arg changelog "$CHANGELOG_BODY" \
+              --arg game_version "$v" \
+              --arg project_id "$MODRINTH_PROJECT_ID" \
+              '{
+                name:           $name,
+                version_number: $version_number,
+                changelog:      $changelog,
+                dependencies:   [],
+                game_versions:  [$game_version],
+                version_type:   "release",
+                loaders:        ["fabric"],
+                featured:       true,
+                project_id:     $project_id,
+                file_parts:     ["file0"],
+                primary_file:   "file0"
+              }')
+
+            curl -fsSL \
+              -H "Authorization: ${MODRINTH_TOKEN}" \
+              -F "data=${DATA}" \
+              -F "file0=@${MRPACK}" \
+              "https://api.modrinth.com/v2/version"
+
+            echo ""
+            echo "Uploaded ${v}"
+          done

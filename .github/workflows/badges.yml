@@ -1,0 +1,39 @@
+name: Update Mod Count Badges
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'Packwiz/*/mods/*.pw.toml'
+
+jobs:
+  update-badges:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Generate badge JSONs
+        run: |
+          mkdir -p .github/badges
+          for v in 1.20.1 1.21.1 1.21.4 1.21.11 26.1.2; do
+            COUNT=$(find "Packwiz/$v/mods" -name "*.pw.toml" | wc -l | tr -d ' ')
+            printf '{\n  "schemaVersion": 1,\n  "label": "%s",\n  "message": "%s mods",\n  "color": "blue"\n}\n' \
+              "$v" "$COUNT" > ".github/badges/${v}.json"
+            echo "  ${v}: ${COUNT} mods"
+          done
+
+      - name: Commit badge updates
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add .github/badges/*.json
+          if git diff --cached --quiet; then
+            echo "No badge changes"
+          else
+            git commit -m "chore: update mod count badges"
+            git push
+          fi

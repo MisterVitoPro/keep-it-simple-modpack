@@ -15,6 +15,21 @@
       "wave_bug_count": 0,
       "commit_sha": null,
       "skipped_reason": "no changes"
+    },
+    {
+      "wave_id": 2,
+      "duration_seconds": 80,
+      "agents": [
+        {"agent_id": "wave-2-agent-1", "dev_status": "DONE"},
+        {"agent_id": "wave-2-agent-2", "dev_status": "DONE"},
+        {"agent_id": "wave-2-agent-3", "dev_status": "DONE"},
+        {"agent_id": "wave-2-agent-4", "dev_status": "DONE"},
+        {"agent_id": "wave-2-agent-5", "dev_status": "DONE"}
+      ],
+      "wave_verifier_status": "CLEAN",
+      "wave_bug_count": 0,
+      "commit_sha": "7301514",
+      "skipped_reason": null
     }
   ],
   "total_bugs": 0,
