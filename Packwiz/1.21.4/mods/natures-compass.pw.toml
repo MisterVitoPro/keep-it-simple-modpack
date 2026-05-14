@@ -1,0 +1,16 @@
+name = "Nature's Compass"
+filename = "NaturesCompass-1.21.4-2.2.8-fabric.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/fPetb5Kh/versions/fF380mCq/NaturesCompass-1.21.4-2.2.8-fabric.jar"
+hash-format = "sha512"
+hash = "518ad6ed86eb322424f026d89d2ff97ea92626eb02bfee712918939301ad63abf5c9c85a6e7e784641174fd35e5a5d9f765ee062d127285a16735731a2478a8d"
+
+[update]
+[update.modrinth]
+mod-id = "fPetb5Kh"
+version = "fF380mCq"
+[update.curseforge]
+file-id = 6078858
+project-id = 252848
