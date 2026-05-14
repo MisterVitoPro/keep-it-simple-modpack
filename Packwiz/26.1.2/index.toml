@@ -6,8 +6,13 @@ hash = "300d75287695e5fc0cade31325eb8d8d091d8bb6c02a07f0ef1025427be2cf11"
 metafile = true
 
 [[files]]
+file = "mods/balm.pw.toml"
+hash = "a7549d639da1b91e6a4c921c2959436a78d58118f983fb89fd7ba99feebc4837"
+metafile = true
+
+[[files]]
 file = "mods/better-advancements.pw.toml"
-hash = "b6f96a547ed11fff08204743266790558bb426fb686a5d83c2acf9bdab571bda"
+hash = "65c04cffb2ff34145d338aa09cc73b24633abc73d4a456696d26c51f9f9ea4fd"
 metafile = true
 
 [[files]]
@@ -131,6 +136,11 @@ hash = "f461d31add58f75f62471c957cad9ae763edf8d264d657220b6692225d223781"
 metafile = true
 
 [[files]]
+file = "mods/shogi.pw.toml"
+hash = "c7d9bd80f5d003fd8e00f632a0aa90d1ed97cdc060fca2c76696a7419b0e87e8"
+metafile = true
+
+[[files]]
 file = "mods/sodium-extra.pw.toml"
 hash = "e86736855c85f8e9f5a2606585d9fa136dcb8caf75e24772412eac186e409741"
 metafile = true
@@ -143,6 +153,11 @@ metafile = true
 [[files]]
 file = "mods/sound-physics-remastered.pw.toml"
 hash = "d2bff2532e163b52140da28bb3e6fa7c494942f0559071c24060af071485aa18"
+metafile = true
+
+[[files]]
+file = "mods/waystones.pw.toml"
+hash = "a8fe7618cd606d4fcc3304e9c4d9cabd71613f7de1f989862cf29fde18f01b5a"
 metafile = true
 
 [[files]]

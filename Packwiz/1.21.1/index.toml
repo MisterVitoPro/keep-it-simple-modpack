@@ -6,8 +6,13 @@ hash = "212a36d4ecbce2d6d80280bec08d2e004589e2347d0e6abc6e915a021966fd25"
 metafile = true
 
 [[files]]
+file = "mods/balm.pw.toml"
+hash = "a7f7974f0526516e8c8e24fecf1544ce1e9017daf95540cf6b3a817c9eb352b4"
+metafile = true
+
+[[files]]
 file = "mods/better-advancements.pw.toml"
-hash = "e06a4f65d6337d1b4b0695f888d2501845982a0eba6150ff8ccdff607c73c3e5"
+hash = "9b0781468a8fc57d6fab66c4e746e2e61535dc20c3f3e64a0ea829d529b90a21"
 metafile = true
 
 [[files]]
@@ -148,6 +153,11 @@ metafile = true
 [[files]]
 file = "mods/sound-physics-remastered.pw.toml"
 hash = "ea5743df3c902bd773291113bdae8399a2155cc714cdf8f085769608c99afb74"
+metafile = true
+
+[[files]]
+file = "mods/waystones.pw.toml"
+hash = "4a9954cd03c00f6154b35a10250a877ff5e9e10f5e1716af57b68f80eed7ba81"
 metafile = true
 
 [[files]]

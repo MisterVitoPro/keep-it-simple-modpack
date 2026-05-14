@@ -55,15 +55,18 @@
 | --- | --- | :---: | :---: | :---: | :---: | :---: | --- |
 | [Better Advancements](https://modrinth.com/mod/better-advancements) `C` | [way2muchnoise](https://modrinth.com/user/way2muchnoise) | ✅ | ✅ | ✅ | ✅ | ✅ | Improves the advancements UI with a better layout, tabs, and search in a modded environment |
 | [Clumps](https://modrinth.com/mod/clumps) `B` | [jaredlll08](https://modrinth.com/user/jaredlll08) | ✅ | ✅ | ✅ | ✅ | ✅ | Clumps XP orbs together to reduce lag |
+| [Waystones](https://modrinth.com/mod/waystones) `B` | [BlayTheNinth](https://modrinth.com/user/BlayTheNinth) | ✅ | ✅ | ✅ | ✅ | ✅ | Teleport back to activated waystones. For Survival, Adventure or Servers. |
 
 ## Libraries
 
 | Name | Author | 1.20.1 | 1.21.1 | 1.21.4 | 26.1.2 | 1.21.11 | Description |
 | :---------------------- | --- | :---: | :---: | :---: | :---: | :---: | --- |
+| [Balm](https://modrinth.com/mod/balm) `B` | [BlayTheNinth](https://modrinth.com/user/BlayTheNinth) | ✅ | ✅ | ✅ | ✅ | ✅ | Abstraction layer library required by BlayTheNinth mods (e.g. Waystones) |
 | [Bookshelf](https://modrinth.com/mod/bookshelf-lib) `B` | [Darkhax](https://modrinth.com/user/Darkhax) | ✅ | ✅ |  |  |  | An open source library for other mods! |
 | [Cloth Config API](https://modrinth.com/mod/cloth-config) `B` | [shedaniel](https://modrinth.com/user/shedaniel) | ✅ | ✅ | ✅ | ✅ | ✅ | Configuration Library for Minecraft Mods |
 | [Fabric API](https://modrinth.com/mod/fabric-api) `B` | [modmuss50](https://modrinth.com/user/modmuss50) | ✅ | ✅ | ✅ | ✅ | ✅ | Lightweight and modular API providing common hooks and intercompatibility measures utilized by mods using the Fabric toolchain. |
 | [Fabric Language Kotlin](https://modrinth.com/mod/fabric-language-kotlin) `B` | [modmuss50](https://modrinth.com/user/modmuss50) | ✅ | ✅ | ✅ | ✅ | ✅ | This is a mod that enables usage of the Kotlin programming language for Fabric mods. |
 | [Prickle](https://modrinth.com/mod/prickle) `B` | [Darkhax](https://modrinth.com/user/Darkhax) |  | ✅ | ✅ | ✅ | ✅ | A JSON based configuration file format brought to Minecraft. |
+| [Shogi](https://modrinth.com/mod/shogi) `B` | [BlayTheNinth](https://modrinth.com/user/BlayTheNinth) |  |  |  | ✅ |  | Rule-based, contextually dynamic configuration options for supported mods. |
 | [YetAnotherConfigLib (YACL)](https://modrinth.com/mod/yacl) `B` | [isxander](https://modrinth.com/user/isxander) | ✅ | ✅ | ✅ | ✅ | ✅ | A builder-based configuration library for Minecraft! |
 
