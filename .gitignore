@@ -1,0 +1,15 @@
+# Generated distribution artifacts (regenerate with scripts/build-indexes.ps1)
+Modrinth/
+CurseForge/
+
+# Test infrastructure (tools, server installs, snapshots)
+.test/
+
+# IDE
+.idea/
+
+# Local secrets
+.env
+
+# Claude Code project config
+.claude/

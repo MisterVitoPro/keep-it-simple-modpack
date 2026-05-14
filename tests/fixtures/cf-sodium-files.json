@@ -1,0 +1,7 @@
+{
+  "data": [
+    { "id": 6260639, "modId": 394468, "displayName": "sodium-fabric-0.5.13+mc1.20.1.jar",
+      "fileName": "sodium-fabric-0.5.13+mc1.20.1.jar", "releaseType": 1,
+      "gameVersions": ["1.20.1", "Fabric"], "fileDate": "2024-01-01T00:00:00Z", "fileFingerprint": 0 }
+  ]
+}

@@ -1,0 +1,13 @@
+name = "Keep It Simple"
+author = "MisterVitoPro"
+version = "0.1.0"
+pack-format = "packwiz:1.1.0"
+
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = "b5db8a621bd81a7edc96e4f7b9a05699798ec5c024eb9d1fcae8fd3a6c9bbb3f"
+
+[versions]
+fabric = "0.19.2"
+minecraft = "1.21.4"

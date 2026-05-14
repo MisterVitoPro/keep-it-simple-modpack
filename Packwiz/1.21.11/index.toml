@@ -1,0 +1,151 @@
+hash-format = "sha256"
+
+[[files]]
+file = "mods/appleskin.pw.toml"
+hash = "8f0dc582981c830838484cb7cb91a6f9a3e254b2e307341ba60f39f5b69f3f69"
+metafile = true
+
+[[files]]
+file = "mods/boat-item-view.pw.toml"
+hash = "a97dd21ad5e1138e383d0011b2a1f0331f8e4d440c3905d887a826d32dd50e4e"
+metafile = true
+
+[[files]]
+file = "mods/cloth-config.pw.toml"
+hash = "eed2a5e4b0ff227f7e57da79bdd8647ade7784554018945f1d5d281c8551b646"
+metafile = true
+
+[[files]]
+file = "mods/clumps.pw.toml"
+hash = "a5f67311e64ea67e8097c1fdd4d20cf11e1c5236334b5becabad7dabdae975db"
+metafile = true
+
+[[files]]
+file = "mods/distanthorizons.pw.toml"
+hash = "9f9db0f309bd7c0387a9a9e27d50f318099c191abf0cdcfd10a92e8c0ba4babf"
+metafile = true
+
+[[files]]
+file = "mods/dynamic-fps.pw.toml"
+hash = "d7baabc0fb02696b3e71b9c63f25450528df6a05bb6672ab80c8e2173ce6adba"
+metafile = true
+
+[[files]]
+file = "mods/enchantment-descriptions.pw.toml"
+hash = "b337d498774b202cb076421f346b3f05dd93b650a52f4855919b24958e30aab4"
+metafile = true
+
+[[files]]
+file = "mods/entity-model-features.pw.toml"
+hash = "aa7f9c5c34b3132b27ed20dddc3297e41b708fef23feab66b9144ed23b5da22a"
+metafile = true
+
+[[files]]
+file = "mods/entityculling.pw.toml"
+hash = "4b206c346e4da89d9bfae02d9e32b5b40b3ad1c4325ae262f03eeee90e023ec4"
+metafile = true
+
+[[files]]
+file = "mods/entitytexturefeatures.pw.toml"
+hash = "b6beeef9bfbd950110e02332b11423d3754ea0ed2ac563cde20d4c7c1851be86"
+metafile = true
+
+[[files]]
+file = "mods/fabric-api.pw.toml"
+hash = "e6ddd2667d4179b6289108350fc3f4d739c2813aee41cd6e28287ce33855bfb6"
+metafile = true
+
+[[files]]
+file = "mods/fabric-language-kotlin.pw.toml"
+hash = "666949e674729b0b665e0ec908e9b570af268f594b8a49467fe88482a210e041"
+metafile = true
+
+[[files]]
+file = "mods/ferrite-core.pw.toml"
+hash = "8e017738545bfce3d6481c6bde004abc9206bceb45a7aaa187069bfeea15155d"
+metafile = true
+
+[[files]]
+file = "mods/immediatelyfast.pw.toml"
+hash = "f2d9169bd5527c272c7227ad2f4fd0d4e8401b591be655571d7e518ade95ae5d"
+metafile = true
+
+[[files]]
+file = "mods/iris.pw.toml"
+hash = "5127c58dc92fe8860d29ad2d05e7c2ea7b973390f41aec73dd2017953f2d1a3e"
+metafile = true
+
+[[files]]
+file = "mods/jade.pw.toml"
+hash = "8c9f85068997dc2a497433bfc005934c398d267af33190e18b0de94830ae9fe3"
+metafile = true
+
+[[files]]
+file = "mods/krypton.pw.toml"
+hash = "ee8cbde93306796c1a4a3535672b364c27a1eebd75185838c7961cc2895027a0"
+metafile = true
+
+[[files]]
+file = "mods/lambdynamiclights.pw.toml"
+hash = "ed22529cf1a3e1b1f5e64aac6b1ea568f26042019c317caa648b5fadeade9385"
+metafile = true
+
+[[files]]
+file = "mods/language-reload.pw.toml"
+hash = "b8c717621403d09472bcb42432caaaf41a82acc869ab181920cc06cc70a04633"
+metafile = true
+
+[[files]]
+file = "mods/lithium.pw.toml"
+hash = "9b4d67656a9c8f0eb9f6ed9f6d34c4ef85474e6fbc85aba80fd2125a15dbf5d2"
+metafile = true
+
+[[files]]
+file = "mods/make_bubbles_pop.pw.toml"
+hash = "113af68f0f6a6490c66b13bd0f2641ecacbb5320b930cc0bc5574dcc8f070474"
+metafile = true
+
+[[files]]
+file = "mods/moreculling.pw.toml"
+hash = "13ba9de81548559a0dff70cc4227072698d9d5051abc04770ebef37877c6ba0f"
+metafile = true
+
+[[files]]
+file = "mods/not-enough-animations.pw.toml"
+hash = "07c178a51f45d9b838fe962bb7baab781584516eef62e56d045d6a490ce9a1be"
+metafile = true
+
+[[files]]
+file = "mods/packet-fixer.pw.toml"
+hash = "8a1129d550e574bb53c0e092a230b141937c5bf6e21e409b6e22c4983d909e17"
+metafile = true
+
+[[files]]
+file = "mods/prickle.pw.toml"
+hash = "b4cfff031fcd90cae9f7f2ff91700dc1ce641b5d99573f1101bed305ba80bd4a"
+metafile = true
+
+[[files]]
+file = "mods/sodium-extra.pw.toml"
+hash = "e98dfafb616ff2a79321a161d539440365bfcb680ccd4ed3d0b43f44762cc42d"
+metafile = true
+
+[[files]]
+file = "mods/sodium.pw.toml"
+hash = "c10d23a4c01c6adb6b72f06cf591b52145618d60af6906a6a2e8a1ab44e4693c"
+metafile = true
+
+[[files]]
+file = "mods/sound-physics-remastered.pw.toml"
+hash = "c0c57afd525078b16e64322014ae850fbc21a30bd393b2e503ba7f4cf48273df"
+metafile = true
+
+[[files]]
+file = "mods/xaeros-minimap.pw.toml"
+hash = "64d3bb06aef42d73501378fde58664428d5bb33e182821a674179ec0f6826a9c"
+metafile = true
+
+[[files]]
+file = "mods/yacl.pw.toml"
+hash = "810e6c14048431dd7e6ae2a17cf8f3bec8a3dfd081a45ac9ef31da43fb45b3c5"
+metafile = true
