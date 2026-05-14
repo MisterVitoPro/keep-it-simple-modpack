@@ -1,0 +1,212 @@
+{
+  "source_plan": "docs/superpowers/plans/2026-05-13-github-release-setup.md",
+  "context7_available": true,
+  "waves": [
+    {
+      "wave_id": 1,
+      "agents": [
+        {
+          "agent_id": "wave-1-agent-1",
+          "task_title": "Initialize git repository with remote",
+          "task_excerpt_lines": "41-64",
+          "owned_files": [],
+          "acceptance_criteria": [
+            "Git repository initialized on main branch",
+            "Remote origin set to git@github.com:MisterVitoPro/keep-it-simple-modpack.git",
+            "git remote -v confirms both fetch and push URLs"
+          ],
+          "recommended_model": "haiku"
+        }
+      ]
+    },
+    {
+      "wave_id": 2,
+      "agents": [
+        {
+          "agent_id": "wave-2-agent-1",
+          "task_title": "Add pack logo and Packwiz pack icons",
+          "task_excerpt_lines": "66-99",
+          "owned_files": [
+            "assets/kis_modpack_sq.png",
+            "Packwiz/1.20.1/pack.png",
+            "Packwiz/1.21.1/pack.png",
+            "Packwiz/1.21.4/pack.png",
+            "Packwiz/1.21.11/pack.png",
+            "Packwiz/26.1.2/pack.png"
+          ],
+          "acceptance_criteria": [
+            "assets/kis_modpack_sq.png created from Downloads",
+            "pack.png copied to each Packwiz version directory (1.20.1, 1.21.1, 1.21.4, 1.21.11, 26.1.2)",
+            "All 6 image files exist and are valid PNG files"
+          ],
+          "recommended_model": "haiku"
+        },
+        {
+          "agent_id": "wave-2-agent-2",
+          "task_title": "Create LICENSE file",
+          "task_excerpt_lines": "101-157",
+          "owned_files": [
+            "LICENSE"
+          ],
+          "acceptance_criteria": [
+            "LICENSE file created with MIT license text",
+            "File is UTF-8 encoded without BOM",
+            "First three lines match expected output: MIT License, blank line, Copyright (c) 2026 MisterVitoPro"
+          ],
+          "recommended_model": "haiku"
+        },
+        {
+          "agent_id": "wave-2-agent-3",
+          "task_title": "Create CHANGELOG.md",
+          "task_excerpt_lines": "159-243",
+          "owned_files": [
+            "CHANGELOG.md"
+          ],
+          "acceptance_criteria": [
+            "CHANGELOG.md created in Keep a Changelog format",
+            "Contains initial version entry ## [0.1.0] — 2026-05-13",
+            "Format matches pattern expected by publish.yml workflow for release body extraction"
+          ],
+          "recommended_model": "haiku"
+        },
+        {
+          "agent_id": "wave-2-agent-4",
+          "task_title": "Create DISCLAIMERS.md",
+          "task_excerpt_lines": "245-300",
+          "owned_files": [
+            "DISCLAIMERS.md"
+          ],
+          "acceptance_criteria": [
+            "DISCLAIMERS.md created with required sections",
+            "Includes attribution, anticheat warning, no warranty disclaimer, and forking policy",
+            "File is UTF-8 encoded without BOM"
+          ],
+          "recommended_model": "haiku"
+        },
+        {
+          "agent_id": "wave-2-agent-5",
+          "task_title": "Create CONTRIBUTING.md",
+          "task_excerpt_lines": "302-406",
+          "owned_files": [
+            "CONTRIBUTING.md"
+          ],
+          "acceptance_criteria": [
+            "CONTRIBUTING.md created with contribution guidelines",
+            "Documents packwiz CLI workflow, versioning convention, and branch naming",
+            "File is UTF-8 encoded without BOM"
+          ],
+          "recommended_model": "haiku"
+        }
+      ]
+    },
+    {
+      "wave_id": 3,
+      "agents": [
+        {
+          "agent_id": "wave-3-agent-1",
+          "task_title": "Create GitHub issue and pull request templates",
+          "task_excerpt_lines": "408-573",
+          "owned_files": [
+            ".github/ISSUE_TEMPLATE/bug_report.yml",
+            ".github/ISSUE_TEMPLATE/mod_request.yml",
+            ".github/pull_request_template.md"
+          ],
+          "acceptance_criteria": [
+            ".github/ISSUE_TEMPLATE/bug_report.yml created with structured bug report form",
+            ".github/ISSUE_TEMPLATE/mod_request.yml created with structured mod request form",
+            ".github/pull_request_template.md created with PR checklist",
+            "All three template files exist and contain expected structure"
+          ],
+          "recommended_model": "haiku"
+        },
+        {
+          "agent_id": "wave-3-agent-2",
+          "task_title": "Create initial badge JSON payloads",
+          "task_excerpt_lines": "575-661",
+          "owned_files": [
+            ".github/badges/1.20.1.json",
+            ".github/badges/1.21.1.json",
+            ".github/badges/1.21.4.json",
+            ".github/badges/1.21.11.json",
+            ".github/badges/26.1.2.json"
+          ],
+          "acceptance_criteria": [
+            "Five badge JSON files created under .github/badges/",
+            "Each contains valid Shields.io endpoint payload with initial mod counts",
+            "JSON format is valid and properly formatted"
+          ],
+          "recommended_model": "haiku"
+        },
+        {
+          "agent_id": "wave-3-agent-3",
+          "task_title": "Rewrite README.md with logo and badges",
+          "task_excerpt_lines": "663-758",
+          "owned_files": [
+            "README.md"
+          ],
+          "acceptance_criteria": [
+            "README.md rewritten with pack logo",
+            "Dynamic mod-count badges integrated for all versions",
+            "Install instructions and contributing section included",
+            "File is UTF-8 encoded without BOM"
+          ],
+          "recommended_model": "haiku"
+        },
+        {
+          "agent_id": "wave-3-agent-4",
+          "task_title": "Create GitHub Actions badges update workflow",
+          "task_excerpt_lines": "760-826",
+          "owned_files": [
+            ".github/workflows/badges.yml"
+          ],
+          "acceptance_criteria": [
+            ".github/workflows/badges.yml created",
+            "Workflow triggers on push to main",
+            "Updates badge JSON files with current mod counts from each Packwiz version",
+            "Uses packwiz CLI and jq for JSON manipulation"
+          ],
+          "recommended_model": "sonnet"
+        },
+        {
+          "agent_id": "wave-3-agent-5",
+          "task_title": "Create GitHub Actions publish workflow",
+          "task_excerpt_lines": "828-1002",
+          "owned_files": [
+            ".github/workflows/publish.yml"
+          ],
+          "acceptance_criteria": [
+            ".github/workflows/publish.yml created",
+            "Triggers on v*.*.* semver tags",
+            "Diffs each Packwiz/<version>/ against previous tag",
+            "Builds only changed .mrpack files via packwiz CLI",
+            "Creates GitHub Release with extracted CHANGELOG body",
+            "Uploads each changed version to Modrinth via REST API",
+            "Uses ubuntu-latest, packwiz CLI, jq, curl, and softprops/action-gh-release@v2"
+          ],
+          "recommended_model": "sonnet"
+        }
+      ]
+    },
+    {
+      "wave_id": 4,
+      "agents": [
+        {
+          "agent_id": "wave-4-agent-1",
+          "task_title": "Initial commit and push to GitHub",
+          "task_excerpt_lines": "1004-1055",
+          "owned_files": [],
+          "acceptance_criteria": [
+            "All previously created files staged and committed",
+            "Commit message documents the repository setup",
+            "Repository pushed to origin/main",
+            "GitHub repository now contains all setup files and is public-ready"
+          ],
+          "recommended_model": "haiku"
+        }
+      ]
+    }
+  ],
+  "uncovered_plan_sections": [
+    "Post-setup: Before the publish workflow can succeed (lines 1057-1066) — manual steps listed after plan execution"
+  ]
+}

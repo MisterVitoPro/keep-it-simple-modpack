@@ -1,0 +1,22 @@
+{
+  "cycle": 1,
+  "input_plan": "docs/superpowers/plans/2026-05-13-github-release-setup.md",
+  "started_at": "2026-05-13T17:23:35-07:00",
+  "completed_at": null,
+  "context7_available": true,
+  "waves": [
+    {
+      "wave_id": 1,
+      "duration_seconds": 40,
+      "agents": [
+        {"agent_id": "wave-1-agent-1", "dev_status": "DONE"}
+      ],
+      "wave_verifier_status": "CLEAN",
+      "wave_bug_count": 0,
+      "commit_sha": null,
+      "skipped_reason": "no changes"
+    }
+  ],
+  "total_bugs": 0,
+  "next_cycle_plan": null
+}
