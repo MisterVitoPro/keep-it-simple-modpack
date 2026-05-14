@@ -16,7 +16,7 @@
 
 [Overview](README.md) · [Mods List](MODS-LIST.md) · [Changelog](CHANGELOG.md)
 
-Ships only well-maintained, conflict-free mods that improve FPS, memory, and network performance — without changing vanilla gameplay. No magic configuration required: import the pack and play.
+Ships only well-maintained, conflict-free mods that improve FPS, memory, and network performance without changing vanilla gameplay. No configuration required: import the pack and play.
 
 ## Supported Versions
 
@@ -44,7 +44,7 @@ See [MODS-LIST.md](MODS-LIST.md) for the complete list of included mods, their c
 
 ## Contributing
 
-Contributions are welcome — new mods, version updates, bug reports. See [CONTRIBUTING.md](CONTRIBUTING.md) for the workflow.
+Contributions are welcome: new mods, version updates, bug reports. See [CONTRIBUTING.md](CONTRIBUTING.md) for the workflow.
 
 ## Development
 
