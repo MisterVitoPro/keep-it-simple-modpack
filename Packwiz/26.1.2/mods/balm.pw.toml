@@ -11,3 +11,6 @@ hash = "90472e548e193211834e12940ef57f13aeb68f430e68f5c2825996c54ab517d8eff2649c
 [update.modrinth]
 mod-id = "MBAkmtvl"
 version = "ySr8K68c"
+[update.curseforge]
+file-id = 8056283
+project-id = 531761

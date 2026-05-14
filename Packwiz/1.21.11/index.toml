@@ -7,7 +7,7 @@ metafile = true
 
 [[files]]
 file = "mods/balm.pw.toml"
-hash = "974d8b38f628b9ecf976c98332a87d24ddc220848abd9c55f7f7c0bafb5be5a1"
+hash = "c47d80720c58b0ed0b70ecc90f31ee98fde77d479b4cf1961885363ba114eff9"
 metafile = true
 
 [[files]]
@@ -27,12 +27,12 @@ metafile = true
 
 [[files]]
 file = "mods/clumps.pw.toml"
-hash = "a5f67311e64ea67e8097c1fdd4d20cf11e1c5236334b5becabad7dabdae975db"
+hash = "ec42609bb302cb313ff491523f0bef0dad0159efef8118eb0a4601bec7844a86"
 metafile = true
 
 [[files]]
 file = "mods/distanthorizons.pw.toml"
-hash = "9f9db0f309bd7c0387a9a9e27d50f318099c191abf0cdcfd10a92e8c0ba4babf"
+hash = "fbf613d3620c38eb4cf89d28bb4aa98beb325d53a4b55d8385fc0c9d0a60d654"
 metafile = true
 
 [[files]]
@@ -42,7 +42,7 @@ metafile = true
 
 [[files]]
 file = "mods/enchantment-descriptions.pw.toml"
-hash = "b337d498774b202cb076421f346b3f05dd93b650a52f4855919b24958e30aab4"
+hash = "8e43fa482b2e9f5a0ce07a18f04821a7a43383ab63ffe463bc1bcafc4ca2d790"
 metafile = true
 
 [[files]]
@@ -82,7 +82,7 @@ metafile = true
 
 [[files]]
 file = "mods/iris.pw.toml"
-hash = "5127c58dc92fe8860d29ad2d05e7c2ea7b973390f41aec73dd2017953f2d1a3e"
+hash = "d9c3d4341dfe0b02ac2b413c136c4b47524a83db19bce4a019a5055184d29808"
 metafile = true
 
 [[files]]
@@ -112,7 +112,7 @@ metafile = true
 
 [[files]]
 file = "mods/make_bubbles_pop.pw.toml"
-hash = "113af68f0f6a6490c66b13bd0f2641ecacbb5320b930cc0bc5574dcc8f070474"
+hash = "54073613dc2ec4d612397a915b46d465da1639ac95cf6694372200c28fa318cd"
 metafile = true
 
 [[files]]

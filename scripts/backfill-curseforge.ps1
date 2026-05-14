@@ -34,6 +34,26 @@ if (-not (Test-CurseForgeAvailable)) {
 
 $utf8NoBom = New-Object System.Text.UTF8Encoding($false)
 
+# Modrinth slug -> CurseForge slug (when they differ)
+$cfSlugMap = @{
+    'balm'             = 'balm-fabric'   # 500525; older Fabric-specific project
+    'iris'             = 'irisshaders'   # 455508
+    'distanthorizons'  = 'distant-horizons' # 508933
+    'bookshelf-lib'    = 'bookshelf'     # 42968 (Forge-only; kept for completeness)
+    'make_bubbles_pop' = 'make-bubbles-pop' # 605235
+}
+
+# Modrinth slug -> CF project ID (bypasses slug search; use when search returns wrong project)
+$cfProjectMap = @{
+    'clumps' = 256717  # "Clumps Plugin" (1133055) is a Velocity plugin, not the Fabric mod
+}
+
+# If the primary project has no Fabric files for a given MC version, try this fallback project ID.
+# Used for mods that migrated to a new unified CF project for newer MC versions.
+$cfProjectFallback = @{
+    'balm' = 531761  # "Balm" (unified project covering 26.1.2 / 1.21.11+)
+}
+
 # --- Phase 1: build slug -> CF project ID map from existing blocks ---
 
 Write-Host 'Phase 1: collecting known CF project IDs...'
@@ -90,14 +110,22 @@ foreach ($v in $Versions) {
         $content = [System.IO.File]::ReadAllText($toml.FullName, $utf8NoBom)
 
         # Resolve project ID
+        # Priority: explicit project map > version-cache (skipped if slug is remapped) > CF search
+        $cfSlug    = if ($cfSlugMap.ContainsKey($slug)) { $cfSlugMap[$slug] } else { $slug }
         $projectId = $null
-        if ($knownProjectId.ContainsKey($slug)) {
+
+        if ($cfProjectMap.ContainsKey($slug)) {
+            $projectId = $cfProjectMap[$slug]
+            Write-Host "  $slug -- project $projectId (override map)"
+        } elseif ($knownProjectId.ContainsKey($slug) -and -not $cfSlugMap.ContainsKey($slug)) {
+            # Only reuse cache when the slug hasn't been remapped; a remapped slug may have
+            # previously cached the wrong project (found via the old Modrinth slug).
             $projectId = $knownProjectId[$slug]
             Write-Host "  $slug -- project $projectId (reused from another version)"
         } else {
-            Write-Host "  $slug -- searching CF..." -NoNewline
+            Write-Host "  $slug -- searching CF for '$cfSlug'..." -NoNewline
             try {
-                $project = Get-CurseForgeProject -Slug $slug
+                $project = Get-CurseForgeProject -Slug $cfSlug
                 Start-Sleep -Milliseconds 250
             } catch {
                 Write-Host " API error: $_"
@@ -128,6 +156,28 @@ foreach ($v in $Versions) {
         # @($null) stays $null in PS5.1; guard before passing to Select-CurseForgeFile
         if ($null -eq $files) { $files = @() }
         $file = Select-CurseForgeFile -Files $files
+
+        # If primary project has no files, try fallback project ID (e.g. balm dual-project)
+        if (-not $file -and $cfProjectFallback.ContainsKey($slug)) {
+            $fbId = $cfProjectFallback[$slug]
+            Write-Host "  $slug -- no files in project $projectId, trying fallback $fbId..." -NoNewline
+            try {
+                $fbFiles = Get-CurseForgeFiles -ProjectId $fbId -McVersion $mcVersion -LoaderType 4
+                Start-Sleep -Milliseconds 250
+            } catch {
+                Write-Host " fallback error: $_"
+                $fbFiles = @()
+            }
+            if ($null -eq $fbFiles) { $fbFiles = @() }
+            $fbFile = Select-CurseForgeFile -Files $fbFiles
+            if ($fbFile) {
+                $projectId = $fbId
+                $file      = $fbFile
+                Write-Host " found file $($file.id)"
+            } else {
+                Write-Host " no files"
+            }
+        }
 
         if (-not $file) {
             Write-Host "  $slug -- no Fabric file for MC $mcVersion (project $projectId)"
