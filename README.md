@@ -3,7 +3,7 @@
 
   # Keep It Simple
 
-  A lightweight Fabric performance modpack for Minecraft.
+  A performance and quality-of-life Fabric modpack for Minecraft.
 
   [![Version](https://img.shields.io/badge/version-v0.1.0-blue)](https://github.com/MisterVitoPro/keep-it-simple-modpack/releases)
   [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
@@ -16,7 +16,11 @@
 
 [Overview](README.md) · [Mods List](MODS-LIST.md) · [Changelog](CHANGELOG.md)
 
-Ships only well-maintained, conflict-free mods that improve FPS, memory, and network performance without changing vanilla gameplay. No configuration required: import the pack and play.
+Keep It Simple is a Fabric modpack built around one rule: if a mod doesn't make your game run better, look better, or feel better without getting in the way, it doesn't belong here.
+
+Every mod is hand-picked for stability and compatibility across supported Minecraft versions. Sodium rewrites the chunk renderer for dramatically higher FPS. Lithium optimizes game logic across AI, ticking, and world generation. FerriteCore cuts memory usage. Iris brings full shader support. LambDynamicLights, entity texture features, and sound physics add visual and audio depth without touching vanilla mechanics. Jade and Xaero's Minimap surface information that should have always been there.
+
+No quests. No custom dimensions. No overhauls. Just Minecraft, running the way it should.
 
 ## Supported Versions
 
