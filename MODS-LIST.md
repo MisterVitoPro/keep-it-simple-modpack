@@ -57,6 +57,7 @@
 | [Clumps](https://modrinth.com/mod/clumps) `B` | [jaredlll08](https://modrinth.com/user/jaredlll08) | ✅ | ✅ | ✅ | ✅ | ✅ | Clumps XP orbs together to reduce lag |
 | [Enchantment Descriptions](https://modrinth.com/mod/enchantment-descriptions) `C` | [Darkhax](https://modrinth.com/user/Darkhax) | ✅ | ✅ | ✅ | ✅ | ✅ | Adds descriptions to enchantments on enchanted books. |
 | [Status Effect Timer](https://modrinth.com/mod/statuseffecttimer) `C` | [Crystal Nest](https://modrinth.com/mod/statuseffecttimer) | ✅ | ✅ | ✅ | ✅ | ✅ | Overlay a timer on the Vanilla status effect HUD icons |
+| [Towns and Towers](https://modrinth.com/mod/towns-and-towers) `B` | [Biban_Auriu](https://modrinth.com/mod/towns-and-towers) | ✅ | ✅ | ✅ | ✅ | ✅ | Spice up your world with new villages, pillager outposts, and even new ships! |
 | [Waystones](https://modrinth.com/mod/waystones) `B` | [BlayTheNinth](https://modrinth.com/user/BlayTheNinth) | ✅ | ✅ | ✅ | ✅ | ✅ | Teleport back to activated waystones. For Survival, Adventure or Servers. |
 
 ## Libraries
@@ -66,6 +67,7 @@
 | [Balm](https://modrinth.com/mod/balm) `B` | [BlayTheNinth](https://modrinth.com/user/BlayTheNinth) | ✅ | ✅ | ✅ | ✅ | ✅ | Abstraction layer library required by BlayTheNinth mods (e.g. Waystones) |
 | [Bookshelf](https://modrinth.com/mod/bookshelf-lib) `B` | [Darkhax](https://modrinth.com/user/Darkhax) | ✅ | ✅ |  |  |  | An open source library for other mods! |
 | [Cloth Config API](https://modrinth.com/mod/cloth-config) `B` | [shedaniel](https://modrinth.com/user/shedaniel) | ✅ | ✅ | ✅ | ✅ | ✅ | Configuration Library for Minecraft Mods |
+| [Cristel Lib](https://modrinth.com/mod/cristel-lib) `B` | [cristelknight999](https://modrinth.com/mod/cl223EMc) | ✅ | ✅ | ✅ | ✅ | ✅ | A Library mod for easy structure config and runtime datapacks. |
 | [Fabric API](https://modrinth.com/mod/fabric-api) `B` | [modmuss50](https://modrinth.com/user/modmuss50) | ✅ | ✅ | ✅ | ✅ | ✅ | Lightweight and modular API providing common hooks and intercompatibility measures utilized by mods using the Fabric toolchain. |
 | [Fabric Language Kotlin](https://modrinth.com/mod/fabric-language-kotlin) `B` | [modmuss50](https://modrinth.com/user/modmuss50) | ✅ | ✅ | ✅ | ✅ | ✅ | This is a mod that enables usage of the Kotlin programming language for Fabric mods. |
 | [Prickle](https://modrinth.com/mod/prickle) `B` | [Darkhax](https://modrinth.com/user/Darkhax) |  | ✅ | ✅ | ✅ | ✅ | A JSON based configuration file format brought to Minecraft. |
