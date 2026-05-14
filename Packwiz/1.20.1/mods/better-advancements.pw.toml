@@ -1,0 +1,16 @@
+name = "Better Advancements"
+filename = "BetterAdvancements-Fabric-1.20.1-0.4.2.59.jar"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/Q2OqKxDG/versions/vD3MRHuS/BetterAdvancements-Fabric-1.20.1-0.4.2.59.jar"
+hash-format = "sha512"
+hash = "ae57acd8b54f1d24d844c67c14f97beb25befaa3cd5687b182aa7a4a1a61ecf0b42e340268017bb7b468d67288de56db661a6331c14d78ad43a6881c58a901f6"
+
+[update]
+[update.modrinth]
+mod-id = "Q2OqKxDG"
+version = "vD3MRHuS"
+[update.curseforge]
+file-id = 5454908
+project-id = 272515

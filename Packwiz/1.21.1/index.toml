@@ -6,6 +6,11 @@ hash = "212a36d4ecbce2d6d80280bec08d2e004589e2347d0e6abc6e915a021966fd25"
 metafile = true
 
 [[files]]
+file = "mods/better-advancements.pw.toml"
+hash = "e06a4f65d6337d1b4b0695f888d2501845982a0eba6150ff8ccdff607c73c3e5"
+metafile = true
+
+[[files]]
 file = "mods/boat-item-view.pw.toml"
 hash = "2986853b65b36c4fe7571e3467c9830ac8753fcdf89c0badeda17d3f14103de2"
 metafile = true
@@ -154,3 +159,7 @@ metafile = true
 file = "mods/yacl.pw.toml"
 hash = "47e9f6966d72419075a91c83b030c68edd8b4e1cf15f4666bfed4880cbee4482"
 metafile = true
+
+[[files]]
+file = "pack.png"
+hash = "f6a5fb4f16e47d8ac84ba786d262c84deb2a76f98ae285f9ef56113b197e1882"

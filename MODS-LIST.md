@@ -53,6 +53,7 @@
 
 | Name | Author | 1.20.1 | 1.21.1 | 1.21.4 | 26.1.2 | 1.21.11 | Description |
 | --- | --- | :---: | :---: | :---: | :---: | :---: | --- |
+| [Better Advancements](https://modrinth.com/mod/better-advancements) `C` | [way2muchnoise](https://modrinth.com/user/way2muchnoise) | ✅ | ✅ | ✅ | ✅ | ✅ | Improves the advancements UI with a better layout, tabs, and search in a modded environment |
 | [Clumps](https://modrinth.com/mod/clumps) `B` | [jaredlll08](https://modrinth.com/user/jaredlll08) | ✅ | ✅ | ✅ | ✅ | ✅ | Clumps XP orbs together to reduce lag |
 
 ## Libraries
