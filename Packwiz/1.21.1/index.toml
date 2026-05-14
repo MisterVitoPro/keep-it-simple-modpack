@@ -131,6 +131,11 @@ hash = "edfd2ef6e6e0f8b824ee4693e7d49dfedf57c9cd8a1916647e2a93635cdd05c4"
 metafile = true
 
 [[files]]
+file = "mods/natures-compass.pw.toml"
+hash = "a1fb9f8a850bc5131bb0b667207945c59430837c17970e8d574b98f895f90135"
+metafile = true
+
+[[files]]
 file = "mods/not-enough-animations.pw.toml"
 hash = "8935ab1439bc327934f8855948f109d94df99e172ffead23564098e48d2b3f62"
 metafile = true
