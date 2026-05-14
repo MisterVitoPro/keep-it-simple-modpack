@@ -6,8 +6,13 @@ hash = "106038a176e5eced071378d8f82b7a04756e6c94526d59c5cccff148a647dad6"
 metafile = true
 
 [[files]]
+file = "mods/balm.pw.toml"
+hash = "9c769f46bbfb8ff1e514f9c5284a8982b13d869679381eace37528b7cfba2ee3"
+metafile = true
+
+[[files]]
 file = "mods/better-advancements.pw.toml"
-hash = "a7e531d2acadba4917fcf7b4846e2bec938d5fcc4982ee105a9148e7f762c8c1"
+hash = "c1855d5a836830062fadc6b60c494381c5eabc30f7199df2767f87465a17af49"
 metafile = true
 
 [[files]]
@@ -22,12 +27,12 @@ metafile = true
 
 [[files]]
 file = "mods/clumps.pw.toml"
-hash = "84010019ebe7f20274f0c6c55aa3dd254e335098f006bed0d4f0a189ac12fa64"
+hash = "2e4d912a3fccacafcdf46f1fd2d3d848dcf56d7b5eb6240e83d38e49c952b5d1"
 metafile = true
 
 [[files]]
 file = "mods/distanthorizons.pw.toml"
-hash = "c6104b858d08c5c3e7b19d428422ed9e59b7a2a1ae381042970fcc271b909294"
+hash = "677ac48123bb6903b4c090c0977229d2a717d90bad7364f4c1d899aadccfbedc"
 metafile = true
 
 [[files]]
@@ -77,7 +82,7 @@ metafile = true
 
 [[files]]
 file = "mods/iris.pw.toml"
-hash = "e03fc0b0c151c5c072ac399d27b5c4268a093c41be73f3b1578d050bb49211f3"
+hash = "72f817c8fafef3687be23e04aec8da945e8e7f5aebf9a6878b0132883f8aeb55"
 metafile = true
 
 [[files]]
@@ -107,7 +112,7 @@ metafile = true
 
 [[files]]
 file = "mods/make_bubbles_pop.pw.toml"
-hash = "1d19237dc3a66d87a018bafb3f69e701bcba8ba1fdef71d9a5f17222c15a3120"
+hash = "f8337fdf62608fb1555c7f842d99d3f1348454f78939a87e92cd660debeee764"
 metafile = true
 
 [[files]]
@@ -143,6 +148,11 @@ metafile = true
 [[files]]
 file = "mods/sound-physics-remastered.pw.toml"
 hash = "27827f4166549ff45d04b3018700cec56e44a5da20f531397b2a8180cf5653cb"
+metafile = true
+
+[[files]]
+file = "mods/waystones.pw.toml"
+hash = "64d92d22f232e5317dcf0a68fda02717721b75ba4ae1d3f4f8b29b179fd50b6a"
 metafile = true
 
 [[files]]

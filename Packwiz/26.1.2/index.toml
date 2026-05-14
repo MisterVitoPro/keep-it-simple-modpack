@@ -6,8 +6,13 @@ hash = "300d75287695e5fc0cade31325eb8d8d091d8bb6c02a07f0ef1025427be2cf11"
 metafile = true
 
 [[files]]
+file = "mods/balm.pw.toml"
+hash = "9e683dc6724ff4f4c1c27c75a177c5653c15cb7ceed485d9f7d6e394b8c5b714"
+metafile = true
+
+[[files]]
 file = "mods/better-advancements.pw.toml"
-hash = "b6f96a547ed11fff08204743266790558bb426fb686a5d83c2acf9bdab571bda"
+hash = "65c04cffb2ff34145d338aa09cc73b24633abc73d4a456696d26c51f9f9ea4fd"
 metafile = true
 
 [[files]]
@@ -22,12 +27,12 @@ metafile = true
 
 [[files]]
 file = "mods/clumps.pw.toml"
-hash = "5b76acfd3274e8b3ac95ba027725303763cc27e60c352ab4f7b58563d0f0f6a7"
+hash = "05a69c2b989f9f3502878c1e96c6723eac07626eb42c77b7b38539437a9d1997"
 metafile = true
 
 [[files]]
 file = "mods/distanthorizons.pw.toml"
-hash = "488bda340e3ce6c6bd9328975cb02bd3a87bd534f0efaa0e82e88badf44a96c6"
+hash = "0e1be6876d27c47c23bfcdf9ccffa82e6f84df24320f9ce67f5fcfc1321bf361"
 metafile = true
 
 [[files]]
@@ -37,7 +42,7 @@ metafile = true
 
 [[files]]
 file = "mods/enchantment-descriptions.pw.toml"
-hash = "519878df9920aca02be4f15de7e83b5a61b37c66f46d4e65e6a75dcbf15caaef"
+hash = "941c6b1ee8f751ee0b530cb199feeed459a348e3289694f2cd9da6443ba25f78"
 metafile = true
 
 [[files]]
@@ -77,7 +82,7 @@ metafile = true
 
 [[files]]
 file = "mods/iris.pw.toml"
-hash = "51fa2c64e9cf2d5558a2f1e575960a0a9f9f27f73486d0d679c2bc695eb11026"
+hash = "d55c03c6c5f51008de3d71ed79aacbd0dbee4273d6fd9810171df23cc19b80c6"
 metafile = true
 
 [[files]]
@@ -107,7 +112,7 @@ metafile = true
 
 [[files]]
 file = "mods/make_bubbles_pop.pw.toml"
-hash = "6a4432a5241721089f821d00dcf0530f5738dbf0f4e32bb60b23472257326684"
+hash = "bc89560ecf39d048e3a5c13e81d81f94631c219607aa77a22c0b2b9a48a54d0b"
 metafile = true
 
 [[files]]
@@ -131,6 +136,11 @@ hash = "f461d31add58f75f62471c957cad9ae763edf8d264d657220b6692225d223781"
 metafile = true
 
 [[files]]
+file = "mods/shogi.pw.toml"
+hash = "c7d9bd80f5d003fd8e00f632a0aa90d1ed97cdc060fca2c76696a7419b0e87e8"
+metafile = true
+
+[[files]]
 file = "mods/sodium-extra.pw.toml"
 hash = "e86736855c85f8e9f5a2606585d9fa136dcb8caf75e24772412eac186e409741"
 metafile = true
@@ -143,6 +153,11 @@ metafile = true
 [[files]]
 file = "mods/sound-physics-remastered.pw.toml"
 hash = "d2bff2532e163b52140da28bb3e6fa7c494942f0559071c24060af071485aa18"
+metafile = true
+
+[[files]]
+file = "mods/waystones.pw.toml"
+hash = "a8fe7618cd606d4fcc3304e9c4d9cabd71613f7de1f989862cf29fde18f01b5a"
 metafile = true
 
 [[files]]
