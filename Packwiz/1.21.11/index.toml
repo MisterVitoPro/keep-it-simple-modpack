@@ -7,7 +7,7 @@ metafile = true
 
 [[files]]
 file = "mods/balm.pw.toml"
-hash = "c47d80720c58b0ed0b70ecc90f31ee98fde77d479b4cf1961885363ba114eff9"
+hash = "374b9fde1de628e07b16263ed94b188640bef415f4a95d6ec8c88f158d9c24e1"
 metafile = true
 
 [[files]]
@@ -27,7 +27,7 @@ metafile = true
 
 [[files]]
 file = "mods/clumps.pw.toml"
-hash = "ec42609bb302cb313ff491523f0bef0dad0159efef8118eb0a4601bec7844a86"
+hash = "5153fb13818db0c9007e8441b256377a539701202c494ca1cef334128ea04a44"
 metafile = true
 
 [[files]]
@@ -82,7 +82,7 @@ metafile = true
 
 [[files]]
 file = "mods/iris.pw.toml"
-hash = "d9c3d4341dfe0b02ac2b413c136c4b47524a83db19bce4a019a5055184d29808"
+hash = "d3db1c618e58005fbffb540fa5d87aa4783f1f01ba2d8da0622c0dea8083c444"
 metafile = true
 
 [[files]]
@@ -112,7 +112,7 @@ metafile = true
 
 [[files]]
 file = "mods/make_bubbles_pop.pw.toml"
-hash = "54073613dc2ec4d612397a915b46d465da1639ac95cf6694372200c28fa318cd"
+hash = "ccdebb3ea8e534dc4efb471cc44ae8f66ac5011a67396100813b53062ee5ebbf"
 metafile = true
 
 [[files]]
@@ -151,8 +151,13 @@ hash = "c0c57afd525078b16e64322014ae850fbc21a30bd393b2e503ba7f4cf48273df"
 metafile = true
 
 [[files]]
+file = "mods/statuseffecttimer.pw.toml"
+hash = "0c8b2f238e0aa73f82fcdc09e0f78a298689d40e84cae244ea39e8a5d860b585"
+metafile = true
+
+[[files]]
 file = "mods/waystones.pw.toml"
-hash = "edc37fe569cee06373b9f7ac4bfbb444d3a0484082f6af9db06df457487b7c6c"
+hash = "e280241bcbb155e0391285f6c7fc64c08b6227069e0eaf3a0c02f5957a1d23fa"
 metafile = true
 
 [[files]]

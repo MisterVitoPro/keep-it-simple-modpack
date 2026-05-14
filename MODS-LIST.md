@@ -56,6 +56,7 @@
 | [Better Advancements](https://modrinth.com/mod/better-advancements) `C` | [way2muchnoise](https://modrinth.com/user/way2muchnoise) | ✅ | ✅ | ✅ | ✅ | ✅ | Improves the advancements UI with a better layout, tabs, and search in a modded environment |
 | [Clumps](https://modrinth.com/mod/clumps) `B` | [jaredlll08](https://modrinth.com/user/jaredlll08) | ✅ | ✅ | ✅ | ✅ | ✅ | Clumps XP orbs together to reduce lag |
 | [Enchantment Descriptions](https://modrinth.com/mod/enchantment-descriptions) `C` | [Darkhax](https://modrinth.com/user/Darkhax) | ✅ | ✅ | ✅ | ✅ | ✅ | Adds descriptions to enchantments on enchanted books. |
+| [Status Effect Timer](https://modrinth.com/mod/statuseffecttimer) `C` | [Crystal Nest](https://modrinth.com/mod/statuseffecttimer) | ✅ | ✅ | ✅ | ✅ | ✅ | Overlay a timer on the Vanilla status effect HUD icons |
 | [Waystones](https://modrinth.com/mod/waystones) `B` | [BlayTheNinth](https://modrinth.com/user/BlayTheNinth) | ✅ | ✅ | ✅ | ✅ | ✅ | Teleport back to activated waystones. For Survival, Adventure or Servers. |
 
 ## Libraries
