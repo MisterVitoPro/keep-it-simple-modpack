@@ -3,7 +3,7 @@
 
   # Keep It Simple
 
-  A performance and quality-of-life Fabric modpack for Minecraft.
+  A Fabric modpack for adventuring, questing, and optimized play.
 
   [![Version](https://img.shields.io/badge/version-v0.1.0-blue)](https://github.com/MisterVitoPro/keep-it-simple-modpack/releases)
   [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
@@ -16,11 +16,7 @@
 
 [Overview](README.md) · [Mods List](MODS-LIST.md) · [Changelog](CHANGELOG.md)
 
-Keep It Simple is a Fabric modpack built around one rule: if a mod doesn't make your game run better, look better, or feel better without getting in the way, it doesn't belong here.
-
-Every mod is hand-picked for stability and compatibility. Under the hood, rendering and game logic are heavily optimized for higher FPS and lower memory usage. On the surface, shader support, dynamic lighting, and enhanced entity visuals bring the world to life. Quality-of-life additions surface information and improve feedback without changing how the game plays.
-
-No quests. No custom dimensions. No overhauls. Just Minecraft, running the way it should.
+Keep It Simple adds minor content to promote adventuring and questing, while bringing the client and server optimizations and menus that modded players are accustomed to. This is an alpha release and more content is on the way.
 
 ## Supported Versions
 
