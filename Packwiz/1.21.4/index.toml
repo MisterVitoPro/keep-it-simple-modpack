@@ -126,6 +126,11 @@ hash = "fa12a74b0d1a00d7998ef2457af7bac4ce811c01e4c383b2dadd7dc08473ecf3"
 metafile = true
 
 [[files]]
+file = "mods/medieval-buildings.pw.toml"
+hash = "5aa96d704eb85bd5017e66a298e18b3d317d9ff54648e50d424104c4369fd381"
+metafile = true
+
+[[files]]
 file = "mods/moreculling.pw.toml"
 hash = "cfcb3ab84c7b960f988412a96cd8fb75b4278357a2a9678cd03f0895af13cea1"
 metafile = true

@@ -57,6 +57,7 @@
 | [Better Advancements](https://modrinth.com/mod/better-advancements) `C` | [way2muchnoise](https://modrinth.com/user/way2muchnoise) | ✅ | ✅ | ✅ | ✅ | ✅ | Improves the advancements UI with a better layout, tabs, and search in a modded environment |
 | [Clumps](https://modrinth.com/mod/clumps) `B` | [jaredlll08](https://modrinth.com/user/jaredlll08) | ✅ | ✅ | ✅ | ✅ | ✅ | Clumps XP orbs together to reduce lag |
 | [Enchantment Descriptions](https://modrinth.com/mod/enchantment-descriptions) `C` | [Darkhax](https://modrinth.com/user/Darkhax) | ✅ | ✅ | ✅ | ✅ | ✅ | Adds descriptions to enchantments on enchanted books. |
+| [Medieval Buildings](https://modrinth.com/mod/medieval-buildings) `B` | [lecloutpanda](https://modrinth.com/mod/medieval-buildings) | ✅ | ✅ | ✅ | ✅ | ✅ | Add exciting medieval buildings with hidden enemies and treasures to the world! |
 | [Nature's Compass](https://modrinth.com/mod/natures-compass) `B` | [Chaosyr](https://modrinth.com/mod/natures-compass) | ✅ | ✅ | ✅ | ✅ | ✅ | Allows you to locate biomes anywhere in the world. |
 | [Status Effect Timer](https://modrinth.com/mod/statuseffecttimer) `C` | [Crystal Nest](https://modrinth.com/mod/statuseffecttimer) | ✅ | ✅ | ✅ | ✅ | ✅ | Overlay a timer on the Vanilla status effect HUD icons |
 | [Towns and Towers](https://modrinth.com/mod/towns-and-towers) `B` | [Biban_Auriu](https://modrinth.com/mod/towns-and-towers) | ✅ | ✅ | ✅ | ✅ | ✅ | Spice up your world with new villages, pillager outposts, and even new ships! |
