@@ -53,6 +53,7 @@
 
 | Name | Author | 1.20.1 | 1.21.1 | 1.21.4 | 26.1.2 | 1.21.11 | Description |
 | --- | --- | :---: | :---: | :---: | :---: | :---: | --- |
+| [AdoraBuild: Structures](https://modrinth.com/mod/adorabuild-structures) `B` | [AdoraBuild](https://modrinth.com/user/AdoraBuild) | ✅ | ✅ | ✅ | ✅ | ✅ | Adds over 100 new structures to enhance the world exploration |
 | [Better Advancements](https://modrinth.com/mod/better-advancements) `C` | [way2muchnoise](https://modrinth.com/user/way2muchnoise) | ✅ | ✅ | ✅ | ✅ | ✅ | Improves the advancements UI with a better layout, tabs, and search in a modded environment |
 | [Clumps](https://modrinth.com/mod/clumps) `B` | [jaredlll08](https://modrinth.com/user/jaredlll08) | ✅ | ✅ | ✅ | ✅ | ✅ | Clumps XP orbs together to reduce lag |
 | [Enchantment Descriptions](https://modrinth.com/mod/enchantment-descriptions) `C` | [Darkhax](https://modrinth.com/user/Darkhax) | ✅ | ✅ | ✅ | ✅ | ✅ | Adds descriptions to enchantments on enchanted books. |
