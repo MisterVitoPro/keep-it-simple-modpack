@@ -1,6 +1,11 @@
 hash-format = "sha256"
 
 [[files]]
+file = "mods/adorabuild-structures.pw.toml"
+hash = "687c1e0a8494ff539ab4d894cb35058869eab7405768088fe51cb0eef56e5c50"
+metafile = true
+
+[[files]]
 file = "mods/appleskin.pw.toml"
 hash = "212a36d4ecbce2d6d80280bec08d2e004589e2347d0e6abc6e915a021966fd25"
 metafile = true
@@ -37,7 +42,7 @@ metafile = true
 
 [[files]]
 file = "mods/cristel-lib.pw.toml"
-hash = "636945a93f673014109dc9d3768b4b06e8c7506d067be68602478a7244ff98f9"
+hash = "15e8e2c849de3a988817e2c434865c467f266c8631b6def84767c634d4fd0186"
 metafile = true
 
 [[files]]
@@ -132,7 +137,7 @@ metafile = true
 
 [[files]]
 file = "mods/natures-compass.pw.toml"
-hash = "a1fb9f8a850bc5131bb0b667207945c59430837c17970e8d574b98f895f90135"
+hash = "c6bc9d7c4fcff4d0ec5d1d86217ce4ddb3f01c785856dbaa3a0ca25b7011e1fc"
 metafile = true
 
 [[files]]
@@ -172,12 +177,12 @@ metafile = true
 
 [[files]]
 file = "mods/terrablender.pw.toml"
-hash = "e35593590fe988653baebae4638f6c93b5d822351274955cc1288b34fe5429fe"
+hash = "0dd2dbd4f1696ba345ecb91fdf6cb8e4273a5c430d6395181bf392db98cf23da"
 metafile = true
 
 [[files]]
 file = "mods/towns-and-towers.pw.toml"
-hash = "ec5279371d1531f72dbf50325e33d68678259af92e124b5f788724b404ce66da"
+hash = "aa3b188c5b64f46800f430b98d711b0f34fe9318a8ee97e6e2f8226dd4559de7"
 metafile = true
 
 [[files]]
