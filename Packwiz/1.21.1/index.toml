@@ -171,6 +171,11 @@ hash = "190a4331b2c6a9220a18ae063b3ef2b38ab87d7b50f680fedbe710e4776b10f6"
 metafile = true
 
 [[files]]
+file = "mods/terrablender.pw.toml"
+hash = "e35593590fe988653baebae4638f6c93b5d822351274955cc1288b34fe5429fe"
+metafile = true
+
+[[files]]
 file = "mods/towns-and-towers.pw.toml"
 hash = "ec5279371d1531f72dbf50325e33d68678259af92e124b5f788724b404ce66da"
 metafile = true

@@ -73,5 +73,6 @@
 | [Fabric Language Kotlin](https://modrinth.com/mod/fabric-language-kotlin) `B` | [modmuss50](https://modrinth.com/user/modmuss50) | ✅ | ✅ | ✅ | ✅ | ✅ | This is a mod that enables usage of the Kotlin programming language for Fabric mods. |
 | [Prickle](https://modrinth.com/mod/prickle) `B` | [Darkhax](https://modrinth.com/user/Darkhax) |  | ✅ | ✅ | ✅ | ✅ | A JSON based configuration file format brought to Minecraft. |
 | [Shogi](https://modrinth.com/mod/shogi) `B` | [BlayTheNinth](https://modrinth.com/user/BlayTheNinth) |  |  |  | ✅ |  | Rule-based, contextually dynamic configuration options for supported mods. |
+| [TerraBlender](https://modrinth.com/mod/terrablender) `B` | [Adubbz](https://modrinth.com/user/Adubbz) | ✅ | ✅ | ✅ | ✅ | ✅ | A library mod for adding biomes in a simple and compatible manner! |
 | [YetAnotherConfigLib (YACL)](https://modrinth.com/mod/yacl) `B` | [isxander](https://modrinth.com/user/isxander) | ✅ | ✅ | ✅ | ✅ | ✅ | A builder-based configuration library for Minecraft! |
 
