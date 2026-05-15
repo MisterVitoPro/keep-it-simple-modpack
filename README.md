@@ -42,6 +42,14 @@ Download the `.zip` from the [Releases](../../releases) page and import it via t
 
 See [MODS-LIST.md](MODS-LIST.md) for the complete list of included mods, their categories, and which Minecraft versions each one supports.
 
+## Recommended Datapacks
+
+These datapacks pair well with Keep It Simple but are not bundled — install them per-world from Modrinth.
+
+| Datapack | Versions | Description |
+| --- | --- | --- |
+| [BlazeAndCave's Advancements Pack](https://modrinth.com/datapack/blazeandcaves-advancements-pack) | 1.20.1, 1.21.1, 1.21.4, 1.21.11 | Adds 1000+ new advancements covering every corner of vanilla Minecraft |
+
 ## Contributing
 
 Contributions are welcome: new mods, version updates, bug reports. See [CONTRIBUTING.md](CONTRIBUTING.md) for the workflow.
