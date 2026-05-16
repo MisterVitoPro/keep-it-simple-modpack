@@ -31,6 +31,13 @@ foreach ($v in $Versions) {
         New-Item -ItemType Directory -Force -Path $mrDir | Out-Null
         [System.IO.Compression.ZipFile]::ExtractToDirectory($tmpMr, $mrDir)
         Remove-Item $tmpMr -Force
+        # Copy pack-level overrides (e.g. patched jars) that packwiz export doesn't auto-include
+        $packOverrides = Join-Path $packDir 'overrides'
+        if (Test-Path $packOverrides) {
+            $mrOverridesDir = Join-Path $mrDir 'overrides'
+            New-Item -ItemType Directory -Force -Path $mrOverridesDir | Out-Null
+            Copy-Item -Path "$packOverrides\*" -Destination $mrOverridesDir -Recurse -Force
+        }
         Write-Host "  -> $mrDir"
     } else {
         Write-Warning "  Modrinth export produced no output for $v"
@@ -48,6 +55,12 @@ foreach ($v in $Versions) {
         New-Item -ItemType Directory -Force -Path $cfDir | Out-Null
         [System.IO.Compression.ZipFile]::ExtractToDirectory($tmpCf, $cfDir)
         Remove-Item $tmpCf -Force
+        # Copy pack-level overrides (e.g. patched jars) that packwiz export doesn't auto-include
+        if (Test-Path $packOverrides) {
+            $cfOverridesDir = Join-Path $cfDir 'overrides'
+            New-Item -ItemType Directory -Force -Path $cfOverridesDir | Out-Null
+            Copy-Item -Path "$packOverrides\*" -Destination $cfOverridesDir -Recurse -Force
+        }
         Write-Host "  -> $cfDir"
     } else {
         Write-Warning "  CurseForge export produced no output for $v"

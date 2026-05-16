@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = "mods/adorabuild-structures.pw.toml"
-hash = "a955fd793e7dcca493f8f4bc9acdc876ef79aff223aceb3fa16b3297fe821d73"
+hash = "a244f1fd91b6009992e76a5c66aee746f4de63658510f07161cd67d606c1b5ed"
 metafile = true
 
 [[files]]
@@ -127,7 +127,7 @@ metafile = true
 
 [[files]]
 file = "mods/medieval-buildings.pw.toml"
-hash = "5aa96d704eb85bd5017e66a298e18b3d317d9ff54648e50d424104c4369fd381"
+hash = "ab13af0099db45fda269d1f34a4c7bef9b93afe0ce09016aad590781c9498b26"
 metafile = true
 
 [[files]]

@@ -52,6 +52,14 @@ if ($Mode -in 'server','both') {
         & java -jar $bootstrap -g -s server $packUrl | Out-Null
     } finally { Pop-Location }
 
+    # Copy override mods (not tracked by packwiz-installer, e.g. patched jars)
+    $overrideMods = Join-Path $packDir 'overrides\mods'
+    if (Test-Path $overrideMods) {
+        Get-ChildItem "$overrideMods\*.jar" | ForEach-Object {
+            Copy-Item $_.FullName "$serverDir\mods\" -Force
+        }
+    }
+
     $java = if ($Version -eq '26.1.2') {
         Join-Path $RepoRoot ".test\tools\jdk25\jdk25.0.3_9\bin\java.exe"
     } else { 'java' }

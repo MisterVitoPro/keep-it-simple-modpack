@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = "mods/adorabuild-structures.pw.toml"
-hash = "3d99d17bef571b98a74cc9b21927b49968dced497154c258e1c970b34d2fcd23"
+hash = "481643387c98aba82e86886b9858c55387b187aa5afb40097941bfbbd3b441f4"
 metafile = true
 
 [[files]]
@@ -96,6 +96,11 @@ hash = "e87a90e00879175662a421b4d2069ee364b83274048d66827520d1f29e0b976a"
 metafile = true
 
 [[files]]
+file = "mods/inventory-sorting.pw.toml"
+hash = "4ff6e64c1f8c6561a2d469cfd2f5513ab2443eff2d15db18bf3bc9f095700a9a"
+metafile = true
+
+[[files]]
 file = "mods/iris.pw.toml"
 hash = "64f76042c2b5ea6c4dd0e4ca574490cbb19e1bb98168c3d9f0021f644e15fc66"
 metafile = true
@@ -132,7 +137,7 @@ metafile = true
 
 [[files]]
 file = "mods/medieval-buildings.pw.toml"
-hash = "913deba326a4aa70eac127632233056d06e96f891a46ccaf7705139a2bdbec97"
+hash = "33f45adf12eeeae1c92968cd72fad0e6dfa93e36ba029280e79e0f17f8914a55"
 metafile = true
 
 [[files]]
