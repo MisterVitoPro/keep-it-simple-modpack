@@ -1,0 +1,16 @@
+name = "Inventory Sorting"
+filename = "inventorysorter-fabric-2.1.4+mc1.21.4.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/5ibSyLAz/versions/wOfK0Wk8/inventorysorter-fabric-2.1.4%2Bmc1.21.4.jar"
+hash-format = "sha512"
+hash = "9fe086170c635d634075ddff03d1a5d51a227db5faf377ae367f42a98416c76f86b0f07df0e12231ca48c4b0f5c809cdd6b973614a573c6db35ce623efaecef4"
+
+[update]
+[update.modrinth]
+mod-id = "5ibSyLAz"
+version = "wOfK0Wk8"
+[update.curseforge]
+file-id = 7365749
+project-id = 325471

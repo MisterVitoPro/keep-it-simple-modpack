@@ -52,12 +52,10 @@ if ($Mode -in 'server','both') {
         & java -jar $bootstrap -g -s server $packUrl | Out-Null
     } finally { Pop-Location }
 
-    # Copy override mods (not tracked by packwiz-installer, e.g. patched jars)
-    $overrideMods = Join-Path $packDir 'overrides\mods'
-    if (Test-Path $overrideMods) {
-        Get-ChildItem "$overrideMods\*.jar" | ForEach-Object {
-            Copy-Item $_.FullName "$serverDir\mods\" -Force
-        }
+    # Patch jars with broken fabric-gametest entrypoints (class declared but missing from release jar)
+    $patchScript = Join-Path $PSScriptRoot 'patch-jar-remove-gametest.ps1'
+    Get-ChildItem "$serverDir\mods" -Filter 'inventorysorter*.jar' -ErrorAction SilentlyContinue | ForEach-Object {
+        & $patchScript -JarPath $_.FullName | Out-Null
     }
 
     $java = if ($Version -eq '26.1.2') {

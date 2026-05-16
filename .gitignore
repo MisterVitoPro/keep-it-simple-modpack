@@ -17,3 +17,6 @@ docs/plan-runner/
 
 # Playwright MCP session artifacts
 .playwright-mcp/
+
+# Compiled/binary artifacts
+*.jar
