@@ -38,6 +38,12 @@
 | [Make Bubbles Pop](https://modrinth.com/mod/make_bubbles_pop) `C` | [Tschipcraft](https://modrinth.com/mod/make_bubbles_pop) | ✅ | Makes bubble particles pop and rise realistically to the water surface |
 | [Not Enough Animations](https://modrinth.com/mod/not-enough-animations) `C` | [tr7zw](https://modrinth.com/user/tr7zw) | ✅ | Brings first-person animations to the third-person perspective. |
 
+## Shaders
+
+| Name | Author | 26.1.2 | Description |
+| --- | --- | :---: | --- |
+| [Complementary Shaders - Reimagined](https://modrinth.com/shader/complementary-reimagined) `C` | [EminGT](https://modrinth.com/user/EminGT) | ✅ | Preserving the elements of Minecraft with exceptional quality, detail, and performance. |
+
 ## Utility
 
 | Name | Author | 26.1.2 | Description |
