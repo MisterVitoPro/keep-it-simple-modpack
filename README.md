@@ -7,10 +7,6 @@
 
   [![Version](https://img.shields.io/badge/version-v0.1.0-blue)](https://github.com/MisterVitoPro/keep-it-simple-modpack/releases)
   [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
-  [![1.20.1](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/MisterVitoPro/keep-it-simple-modpack/main/.github/badges/1.20.1.json&label=1.20.1)](MODS-LIST.md)
-  [![1.21.1](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/MisterVitoPro/keep-it-simple-modpack/main/.github/badges/1.21.1.json&label=1.21.1)](MODS-LIST.md)
-  [![1.21.4](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/MisterVitoPro/keep-it-simple-modpack/main/.github/badges/1.21.4.json&label=1.21.4)](MODS-LIST.md)
-  [![1.21.11](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/MisterVitoPro/keep-it-simple-modpack/main/.github/badges/1.21.11.json&label=1.21.11)](MODS-LIST.md)
   [![26.1.2](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/MisterVitoPro/keep-it-simple-modpack/main/.github/badges/26.1.2.json&label=26.1.2)](MODS-LIST.md)
 </div>
 
@@ -22,10 +18,6 @@ Keep It Simple adds minor content to promote adventuring and questing, while bri
 
 | Minecraft | Fabric Loader |
 | --- | --- |
-| 1.20.1 | 0.19.2 |
-| 1.21.1 | 0.19.2 |
-| 1.21.4 | 0.19.2 |
-| 1.21.11 | 0.19.2 |
 | 26.1.2 | 0.19.2 |
 
 ## Install
@@ -48,7 +40,7 @@ These datapacks pair well with Keep It Simple but are not bundled — install th
 
 | Datapack | Versions | Description |
 | --- | --- | --- |
-| [BlazeAndCave's Advancements Pack](https://modrinth.com/datapack/blazeandcaves-advancements-pack) | 1.20.1, 1.21.1, 1.21.4, 1.21.11 | Adds 1000+ new advancements covering every corner of vanilla Minecraft |
+| [BlazeAndCave's Advancements Pack](https://modrinth.com/datapack/blazeandcaves-advancements-pack) | 26.1.2 | Adds 1000+ new advancements covering every corner of vanilla Minecraft |
 
 ## Contributing
 

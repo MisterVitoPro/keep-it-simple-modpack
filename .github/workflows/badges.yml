@@ -19,7 +19,7 @@ jobs:
       - name: Generate badge JSONs
         run: |
           mkdir -p .github/badges
-          for v in 1.20.1 1.21.1 1.21.4 1.21.11 26.1.2; do
+          for v in 26.1.2; do
             COUNT=$(find "Packwiz/$v/mods" -name "*.pw.toml" | wc -l | tr -d ' ')
             printf '{\n  "schemaVersion": 1,\n  "label": "%s",\n  "message": "%s mods",\n  "color": "blue"\n}\n' \
               "$v" "$COUNT" > ".github/badges/${v}.json"

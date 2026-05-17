@@ -31,6 +31,22 @@ foreach ($v in $Versions) {
         New-Item -ItemType Directory -Force -Path $mrDir | Out-Null
         [System.IO.Compression.ZipFile]::ExtractToDirectory($tmpMr, $mrDir)
         Remove-Item $tmpMr -Force
+        # Patch and bundle any mods that have broken fabric-gametest entrypoints.
+        # Source: the test-server mods dir (populated + patched by update-baseline.ps1).
+        $serverMods = Join-Path $RepoRoot ".test\$v-server\mods"
+        $patchScript = Join-Path $PSScriptRoot 'patch-jar-remove-gametest.ps1'
+        @('inventorysorter') | ForEach-Object {
+            $jar = Get-ChildItem $serverMods -Filter "$_*.jar" -ErrorAction SilentlyContinue | Select-Object -First 1
+            if ($jar) {
+                $tmp = Join-Path $env:TEMP ($jar.Name)
+                Copy-Item $jar.FullName $tmp -Force
+                & $patchScript -JarPath $tmp | Out-Null
+                $mrModsDir = Join-Path $mrDir 'overrides\mods'
+                New-Item -ItemType Directory -Force -Path $mrModsDir | Out-Null
+                Copy-Item $tmp $mrModsDir -Force
+                Remove-Item $tmp -Force
+            }
+        }
         Write-Host "  -> $mrDir"
     } else {
         Write-Warning "  Modrinth export produced no output for $v"
@@ -48,6 +64,19 @@ foreach ($v in $Versions) {
         New-Item -ItemType Directory -Force -Path $cfDir | Out-Null
         [System.IO.Compression.ZipFile]::ExtractToDirectory($tmpCf, $cfDir)
         Remove-Item $tmpCf -Force
+        # Same patched-jar injection for CurseForge export
+        @('inventorysorter') | ForEach-Object {
+            $jar = Get-ChildItem $serverMods -Filter "$_*.jar" -ErrorAction SilentlyContinue | Select-Object -First 1
+            if ($jar) {
+                $tmp = Join-Path $env:TEMP ($jar.Name)
+                Copy-Item $jar.FullName $tmp -Force
+                & $patchScript -JarPath $tmp | Out-Null
+                $cfModsDir = Join-Path $cfDir 'overrides\mods'
+                New-Item -ItemType Directory -Force -Path $cfModsDir | Out-Null
+                Copy-Item $tmp $cfModsDir -Force
+                Remove-Item $tmp -Force
+            }
+        }
         Write-Host "  -> $cfDir"
     } else {
         Write-Warning "  CurseForge export produced no output for $v"

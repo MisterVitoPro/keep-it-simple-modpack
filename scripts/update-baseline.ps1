@@ -52,6 +52,12 @@ if ($Mode -in 'server','both') {
         & java -jar $bootstrap -g -s server $packUrl | Out-Null
     } finally { Pop-Location }
 
+    # Patch jars with broken fabric-gametest entrypoints (class declared but missing from release jar)
+    $patchScript = Join-Path $PSScriptRoot 'patch-jar-remove-gametest.ps1'
+    Get-ChildItem "$serverDir\mods" -Filter 'inventorysorter*.jar' -ErrorAction SilentlyContinue | ForEach-Object {
+        & $patchScript -JarPath $_.FullName | Out-Null
+    }
+
     $java = if ($Version -eq '26.1.2') {
         Join-Path $RepoRoot ".test\tools\jdk25\jdk25.0.3_9\bin\java.exe"
     } else { 'java' }

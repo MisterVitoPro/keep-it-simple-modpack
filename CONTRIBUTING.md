@@ -19,7 +19,7 @@
 3. For each MC version you want to support, add the mod via packwiz:
 
    ```powershell
-   cd Packwiz\1.21.4
+   cd Packwiz\26.1.2
    packwiz mr add https://modrinth.com/mod/<slug>
    ```
 
