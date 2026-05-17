@@ -213,3 +213,8 @@ metafile = true
 [[files]]
 file = "pack.png"
 hash = "f6a5fb4f16e47d8ac84ba786d262c84deb2a76f98ae285f9ef56113b197e1882"
+
+[[files]]
+file = "shaderpacks/complementary-reimagined.pw.toml"
+hash = "844af68c07eac70b45bb488a7d9af2298cd6f2867d1ad33fd7abe94110dfedb1"
+metafile = true
