@@ -8,14 +8,15 @@ param(
     [Parameter(Mandatory)][string]$AuthorName,
     [Parameter(Mandatory)][string]$Description,
     [Parameter(Mandatory)][ValidateSet('C','S','B')][string]$Side,
-    [Parameter(Mandatory)][ValidateSet('Performance','Visual','Functional','Libraries')][string]$Category,
+    [Parameter(Mandatory)][ValidateSet('Performance','Visual','Functional','Libraries','Shaders')][string]$Category,
+    [string]$ProjectType = 'mod',
     [Parameter(Mandatory)][string[]]$McVersionsInTable,
     [Parameter(Mandatory)][string[]]$VersionsAvailable,
     [Parameter(Mandatory)][AllowEmptyCollection()][string[]]$VersionsAdded
 )
 
 $ErrorActionPreference = 'Stop'
-$CategoryOrder = @('Performance','Visual','Functional','Libraries')
+$CategoryOrder = @('Performance','Visual','Shaders','Functional','Libraries')
 
 $lines = Get-Content $File -Encoding utf8
 
@@ -33,7 +34,7 @@ function Find-SectionRange([string[]]$ls, [string]$header) {
 }
 
 function Build-Row {
-    $modLink    = "[$Name](https://modrinth.com/mod/$Slug) ``$Side``"
+    $modLink    = "[$Name](https://modrinth.com/$ProjectType/$Slug) ``$Side``"
     $authorLink = "[$AuthorName]($AuthorUrl)"
     $cells = @($modLink, $authorLink)
     foreach ($mc in $McVersionsInTable) {
