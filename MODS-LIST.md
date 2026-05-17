@@ -63,8 +63,10 @@
 | [Better Advancements](https://modrinth.com/mod/better-advancements) `C` | [way2muchnoise](https://modrinth.com/user/way2muchnoise) | ✅ | Improves the advancements UI with a better layout, tabs, and search in a modded environment |
 | [Clumps](https://modrinth.com/mod/clumps) `B` | [jaredlll08](https://modrinth.com/user/jaredlll08) | ✅ | Clumps XP orbs together to reduce lag |
 | [Enchantment Descriptions](https://modrinth.com/mod/enchantment-descriptions) `C` | [Darkhax](https://modrinth.com/user/Darkhax) | ✅ | Adds descriptions to enchantments on enchanted books. |
+| [FancyMenu](https://modrinth.com/mod/fancymenu) `C` | [Keksuccino](https://modrinth.com/user/Keksuccino) | ✅ | Customize Minecraft's menus with ease! |
 | [Inventory Sorting](https://modrinth.com/mod/inventory-sorting) `B` | [kyrptonaught](https://modrinth.com/user/kyrptonaught) | ✅ | Quick, simple, and lightweight inventory sorting |
 | [Medieval Buildings](https://modrinth.com/mod/medieval-buildings) `B` | [lecloutpanda](https://modrinth.com/mod/medieval-buildings) | ✅ | Add exciting medieval buildings with hidden enemies and treasures to the world! |
+| [Mod Menu](https://modrinth.com/mod/modmenu) `C` | [Prospector](https://modrinth.com/user/Prospector) | ✅ | Adds a mod menu to view the list of mods you have installed. |
 | [Nature's Compass](https://modrinth.com/mod/natures-compass) `B` | [Chaosyr](https://modrinth.com/mod/natures-compass) | ✅ | Allows you to locate biomes anywhere in the world. |
 | [Status Effect Timer](https://modrinth.com/mod/statuseffecttimer) `C` | [Crystal Nest](https://modrinth.com/mod/statuseffecttimer) | ✅ | Overlay a timer on the Vanilla status effect HUD icons |
 | [Towns and Towers](https://modrinth.com/mod/towns-and-towers) `B` | [Biban_Auriu](https://modrinth.com/mod/towns-and-towers) | ✅ | Spice up your world with new villages, pillager outposts, and even new ships! |
@@ -79,7 +81,10 @@
 | [Cristel Lib](https://modrinth.com/mod/cristel-lib) `B` | [cristelknight999](https://modrinth.com/mod/cl223EMc) | ✅ | A Library mod for easy structure config and runtime datapacks. |
 | [Fabric API](https://modrinth.com/mod/fabric-api) `B` | [modmuss50](https://modrinth.com/user/modmuss50) | ✅ | Lightweight and modular API providing common hooks and intercompatibility measures utilized by mods using the Fabric toolchain. |
 | [Fabric Language Kotlin](https://modrinth.com/mod/fabric-language-kotlin) `B` | [modmuss50](https://modrinth.com/user/modmuss50) | ✅ | This is a mod that enables usage of the Kotlin programming language for Fabric mods. |
+| [Konkrete](https://modrinth.com/mod/konkrete) `B` | [Keksuccino](https://modrinth.com/user/Keksuccino) | ✅ | Just another boring library mod. |
+| [Melody](https://modrinth.com/mod/melody) `C` | [Keksuccino](https://modrinth.com/user/Keksuccino) | ✅ | OpenAL-based library mod for playing background music. |
 | [Prickle](https://modrinth.com/mod/prickle) `B` | [Darkhax](https://modrinth.com/user/Darkhax) | ✅ | A JSON based configuration file format brought to Minecraft. |
 | [Shogi](https://modrinth.com/mod/shogi) `B` | [BlayTheNinth](https://modrinth.com/user/BlayTheNinth) | ✅ | Rule-based, contextually dynamic configuration options for supported mods. |
 | [TerraBlender](https://modrinth.com/mod/terrablender) `B` | [Adubbz](https://modrinth.com/user/Adubbz) | ✅ | A library mod for adding biomes in a simple and compatible manner! |
+| [Text Placeholder API](https://modrinth.com/mod/placeholder-api) `B` | [Patbox](https://modrinth.com/user/Patbox) | ✅ | Placeholder and text manipulation library for Minecraft mods. |
 | [YetAnotherConfigLib (YACL)](https://modrinth.com/mod/yacl) `B` | [isxander](https://modrinth.com/user/isxander) | ✅ | A builder-based configuration library for Minecraft! |
