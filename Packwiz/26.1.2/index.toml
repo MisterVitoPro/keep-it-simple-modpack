@@ -81,6 +81,11 @@ hash = "666949e674729b0b665e0ec908e9b570af268f594b8a49467fe88482a210e041"
 metafile = true
 
 [[files]]
+file = "mods/fancymenu.pw.toml"
+hash = "11f491b29eeafed74bcfec01ae7a4b282a8084d05a19ff2fe1bb4723cc176529"
+metafile = true
+
+[[files]]
 file = "mods/ferrite-core.pw.toml"
 hash = "544f5feadb5ae40179f00ec47e8762f16ad7e1753d5e8b03d9f2ac1ca6feb3d5"
 metafile = true
@@ -103,6 +108,11 @@ metafile = true
 [[files]]
 file = "mods/jade.pw.toml"
 hash = "42632e7a5995d57adb80bf55857816c4bd797c368436d95e3081dd0cea12ec1c"
+metafile = true
+
+[[files]]
+file = "mods/konkrete.pw.toml"
+hash = "a3c8c48db58dcbc39a49f1d8c4a7e41a84cd2bc6a443905449c2ef3c7440387a"
 metafile = true
 
 [[files]]
@@ -136,6 +146,16 @@ hash = "e283d9d51255dbd68f8f0689aef13a189b19347bb8fe1fab2b9111901963c23c"
 metafile = true
 
 [[files]]
+file = "mods/melody.pw.toml"
+hash = "885444f9444eed0b2f71445d795a7a3462c5646edd1940468a791cc46a6626ec"
+metafile = true
+
+[[files]]
+file = "mods/modmenu.pw.toml"
+hash = "a60e7c5d41a50cab8e6dcf477e0f2f1aa6db607710e2156e4526fd97366d8771"
+metafile = true
+
+[[files]]
 file = "mods/moreculling.pw.toml"
 hash = "1c193832828b51aa90fce384ba941d34a43b5385089c26b53f3cb00fb21df4d0"
 metafile = true
@@ -153,6 +173,11 @@ metafile = true
 [[files]]
 file = "mods/packet-fixer.pw.toml"
 hash = "492a5ceb707305a76afc27ec6981f38ef23d9415c980c650e1e8a699e73ead47"
+metafile = true
+
+[[files]]
+file = "mods/placeholder-api.pw.toml"
+hash = "d20369e5848ca31ecbb49bae22e953439173bd4617ca239b23335366b2a6a0e9"
 metafile = true
 
 [[files]]
