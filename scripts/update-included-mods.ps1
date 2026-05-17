@@ -11,7 +11,7 @@ param(
     [Parameter(Mandatory)][ValidateSet('Performance','Visual','Functional','Libraries')][string]$Category,
     [Parameter(Mandatory)][string[]]$McVersionsInTable,
     [Parameter(Mandatory)][string[]]$VersionsAvailable,
-    [Parameter(Mandatory)][string[]]$VersionsAdded
+    [Parameter(Mandatory)][AllowEmptyCollection()][string[]]$VersionsAdded
 )
 
 $ErrorActionPreference = 'Stop'

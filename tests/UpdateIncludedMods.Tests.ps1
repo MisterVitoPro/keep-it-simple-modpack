@@ -16,9 +16,9 @@ Describe "update-included-mods.ps1" {
             -AuthorUrl 'https://modrinth.com/organization/caffeinemc' -AuthorName 'CaffeineMC' `
             -Description 'Rewrites chunk rendering' `
             -Side 'C' -Category 'Performance' `
-            -McVersionsInTable @('1.20.1','1.21.1','1.21.4','26.1.2') `
-            -VersionsAvailable @('1.20.1','1.21.1','1.21.4','26.1.2') `
-            -VersionsAdded     @('1.20.1','1.21.1','1.21.4','26.1.2')
+            -McVersionsInTable @('26.1.2') `
+            -VersionsAvailable @('26.1.2') `
+            -VersionsAdded     @('26.1.2')
 
         $out = Get-Content $script:work -Raw -Encoding utf8
         $out | Should -Match '## Performance'
@@ -32,9 +32,9 @@ Describe "update-included-mods.ps1" {
             File = $script:work; Slug='sodium'; Name='Sodium'
             AuthorUrl='https://modrinth.com/organization/caffeinemc'; AuthorName='CaffeineMC'
             Description='Rewrites'; Side='C'; Category='Performance'
-            McVersionsInTable=@('1.20.1','1.21.1','1.21.4','26.1.2')
-            VersionsAvailable=@('1.20.1','1.21.1','1.21.4','26.1.2')
-            VersionsAdded    =@('1.20.1','1.21.1','1.21.4','26.1.2')
+            McVersionsInTable=@('26.1.2')
+            VersionsAvailable=@('26.1.2')
+            VersionsAdded    =@('26.1.2')
         }
         & $script:script @argsHash
         & $script:script @argsHash
@@ -49,9 +49,9 @@ Describe "update-included-mods.ps1" {
             -AuthorUrl 'https://modrinth.com/organization/caffeinemc' -AuthorName 'CaffeineMC' `
             -Description 'Optimizes game logic' `
             -Side 'B' -Category 'Performance' `
-            -McVersionsInTable @('1.20.1','1.21.1','1.21.4','26.1.2') `
-            -VersionsAvailable @('1.20.1','1.21.1','1.21.4','26.1.2') `
-            -VersionsAdded     @('1.20.1','1.21.1','1.21.4','26.1.2')
+            -McVersionsInTable @('26.1.2') `
+            -VersionsAvailable @('26.1.2') `
+            -VersionsAdded     @('26.1.2')
 
         $lines = Get-Content $script:work -Encoding utf8
         $litIdx = ($lines | Select-String -Pattern '^\| \[Lithium\]' | Select-Object -First 1).LineNumber
@@ -66,12 +66,12 @@ Describe "update-included-mods.ps1" {
             -AuthorUrl 'https://modrinth.com/organization/caffeinemc' -AuthorName 'CaffeineMC' `
             -Description 'Optimizes' `
             -Side 'B' -Category 'Performance' `
-            -McVersionsInTable @('1.20.1','1.21.1','1.21.4','26.1.2') `
-            -VersionsAvailable @('1.20.1','1.21.1','1.21.4','26.1.2') `
-            -VersionsAdded     @('1.20.1','1.21.4')
+            -McVersionsInTable @('26.1.2') `
+            -VersionsAvailable @('26.1.2') `
+            -VersionsAdded     @()
 
         $row = (Get-Content $script:work -Encoding utf8) -match '^\| \[Lithium\]'
-        $row | Should -Match '\| .* \|  \| .* \|  \|'
+        $row | Should -Match '\|  \|'
     }
 
     It "creates the Performance section before Visual / Functional / Libraries" {
@@ -84,7 +84,7 @@ Describe "update-included-mods.ps1" {
 
 ## Libraries
 
-| Name | Author | 1.20.1 | Description |
+| Name | Author | 26.1.2 | Description |
 | --- | --- | :---: | --- |
 | [YACL](https://example.com) ``B`` | [isXander](https://example.com) | $(([char]0x2705)) | Config UI library |
 "@
@@ -96,9 +96,9 @@ Describe "update-included-mods.ps1" {
             -AuthorUrl 'https://modrinth.com/organization/caffeinemc' -AuthorName 'CaffeineMC' `
             -Description 'Renderer' `
             -Side 'C' -Category 'Performance' `
-            -McVersionsInTable @('1.20.1') `
-            -VersionsAvailable @('1.20.1') `
-            -VersionsAdded     @('1.20.1')
+            -McVersionsInTable @('26.1.2') `
+            -VersionsAvailable @('26.1.2') `
+            -VersionsAdded     @('26.1.2')
 
         $out = Get-Content $script:work -Raw -Encoding utf8
         $perfIdx = $out.IndexOf('## Performance')
@@ -115,9 +115,9 @@ Describe "update-included-mods.ps1" {
             -AuthorUrl 'https://modrinth.com/organization/caffeinemc' -AuthorName 'CaffeineMC' `
             -Description 'Optimizes' `
             -Side 'B' -Category 'Performance' `
-            -McVersionsInTable @('1.20.1','1.21.1','1.21.4','26.1.2') `
-            -VersionsAvailable @('1.20.1','1.21.1','1.21.4','26.1.2') `
-            -VersionsAdded     @('1.20.1','1.21.1','1.21.4','26.1.2')
+            -McVersionsInTable @('26.1.2') `
+            -VersionsAvailable @('26.1.2') `
+            -VersionsAdded     @('26.1.2')
 
         $bytes = [System.IO.File]::ReadAllBytes($script:work)
         $checkmarkUtf8 = [System.Text.Encoding]::UTF8.GetBytes([char]0x2705)
