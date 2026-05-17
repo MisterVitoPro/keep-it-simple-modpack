@@ -3,7 +3,7 @@
 
   # Keep It Simple
 
-  A Fabric modpack for adventuring, questing, and optimized play.
+  A Fabric modpack for adventuring, questing, and optimized play — kept current with the latest Minecraft releases.
 
   [![Version](https://img.shields.io/badge/version-v0.1.0-blue)](https://github.com/MisterVitoPro/keep-it-simple-modpack/releases)
   [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
@@ -12,7 +12,7 @@
 
 [Overview](README.md) · [Mods List](MODS-LIST.md) · [Changelog](CHANGELOG.md)
 
-Keep It Simple adds minor content to promote adventuring and questing, while bringing the client and server optimizations and menus that modded players are accustomed to. This is an alpha release and more content is on the way.
+Keep It Simple adds minor content to promote adventuring and questing, while bringing the client and server optimizations and menus that modded players are accustomed to. The pack is actively maintained to track new Minecraft releases as they drop. This is an alpha release and more content is on the way.
 
 ## Supported Versions
 
