@@ -42,6 +42,7 @@
 
 | Name | Author | 26.1.2 | Description |
 | --- | --- | :---: | --- |
+| [BSL Shaders](https://modrinth.com/shader/bsl-shaders) `C` | [capttatsu](https://modrinth.com/user/capttatsu) | ✅ | Shaderpack for Minecraft: Java Edition. It's bright, colorful, and distinct. |
 | [Complementary Shaders - Reimagined](https://modrinth.com/shader/complementary-reimagined) `C` | [EminGT](https://modrinth.com/user/EminGT) | ✅ | Preserving the elements of Minecraft with exceptional quality, detail, and performance. |
 
 ## Utility

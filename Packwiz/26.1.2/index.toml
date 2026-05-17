@@ -92,7 +92,7 @@ metafile = true
 
 [[files]]
 file = "mods/inventory-sorting.pw.toml"
-hash = "ea171946bbf90d3b552935251ca62b5b5b45e25bc73d6d24bcba43c4b6cc7abe"
+hash = "202d3c717a6e6b7534eb57b0a63fd2edb7166178d2d657d6dc39739eecbb32af"
 metafile = true
 
 [[files]]
@@ -215,6 +215,11 @@ file = "pack.png"
 hash = "f6a5fb4f16e47d8ac84ba786d262c84deb2a76f98ae285f9ef56113b197e1882"
 
 [[files]]
+file = "shaderpacks/bsl-shaders.pw.toml"
+hash = "f91c2ec79366b4607d93928a07c223cbaa4a2e18fe0c110e68a3fc064e69b65a"
+metafile = true
+
+[[files]]
 file = "shaderpacks/complementary-reimagined.pw.toml"
-hash = "844af68c07eac70b45bb488a7d9af2298cd6f2867d1ad33fd7abe94110dfedb1"
+hash = "aa5ddda0906fe9ecc0a67c07f29827b4905d652c9b2ad2c5e1e5143966ce8f7f"
 metafile = true
