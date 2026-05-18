@@ -1,0 +1,16 @@
+name = "Underground Worlds"
+filename = "undergroundworlds-fabric-3.1-26.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/g9fDJQZe/versions/5Q5mkkYr/undergroundworlds-fabric-3.1-26.1.jar"
+hash-format = "sha512"
+hash = "d04489db0d74762c3c01e3a7919fa936cd99b3e1ff8d3186044afd827218cd2dd5c4415cc892b11e0dbcac271ea9eda01dbe0477e496ee7abd1fc81c57ca12c8"
+
+[update]
+[update.modrinth]
+mod-id = "g9fDJQZe"
+version = "5Q5mkkYr"
+[update.curseforge]
+file-id = 8091752
+project-id = 918314
