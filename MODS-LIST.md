@@ -70,6 +70,7 @@
 | [Nature's Compass](https://modrinth.com/mod/natures-compass) `B` | [Chaosyr](https://modrinth.com/mod/natures-compass) | ✅ | Allows you to locate biomes anywhere in the world. |
 | [Status Effect Timer](https://modrinth.com/mod/statuseffecttimer) `C` | [Crystal Nest](https://modrinth.com/mod/statuseffecttimer) | ✅ | Overlay a timer on the Vanilla status effect HUD icons |
 | [Towns and Towers](https://modrinth.com/mod/towns-and-towers) `B` | [Biban_Auriu](https://modrinth.com/mod/towns-and-towers) | ✅ | Spice up your world with new villages, pillager outposts, and even new ships! |
+| [Underground Worlds](https://modrinth.com/mod/underground-worlds) `B` | [HexagonNico](https://modrinth.com/user/HexagonNico) | ✅ | Adds underground biomes and dungeons, plus above-ground structures, in a modular and configurable way. |
 | [Waystones](https://modrinth.com/mod/waystones) `B` | [BlayTheNinth](https://modrinth.com/user/BlayTheNinth) | ✅ | Teleport back to activated waystones. For Survival, Adventure or Servers. |
 
 ## Libraries
@@ -81,6 +82,7 @@
 | [Cristel Lib](https://modrinth.com/mod/cristel-lib) `B` | [cristelknight999](https://modrinth.com/mod/cl223EMc) | ✅ | A Library mod for easy structure config and runtime datapacks. |
 | [Fabric API](https://modrinth.com/mod/fabric-api) `B` | [modmuss50](https://modrinth.com/user/modmuss50) | ✅ | Lightweight and modular API providing common hooks and intercompatibility measures utilized by mods using the Fabric toolchain. |
 | [Fabric Language Kotlin](https://modrinth.com/mod/fabric-language-kotlin) `B` | [modmuss50](https://modrinth.com/user/modmuss50) | ✅ | This is a mod that enables usage of the Kotlin programming language for Fabric mods. |
+| [Forge Config API Port](https://modrinth.com/mod/forge-config-api-port) `B` | [Fuzs](https://modrinth.com/user/Fuzs) | ✅ | NeoForge's & Forge's config systems provided to other modding ecosystems. Designed for a multiloader architecture. |
 | [Konkrete](https://modrinth.com/mod/konkrete) `B` | [Keksuccino](https://modrinth.com/user/Keksuccino) | ✅ | Just another boring library mod. |
 | [Melody](https://modrinth.com/mod/melody) `C` | [Keksuccino](https://modrinth.com/user/Keksuccino) | ✅ | OpenAL-based library mod for playing background music. |
 | [Prickle](https://modrinth.com/mod/prickle) `B` | [Darkhax](https://modrinth.com/user/Darkhax) | ✅ | A JSON based configuration file format brought to Minecraft. |

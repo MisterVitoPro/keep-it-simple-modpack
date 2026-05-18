@@ -91,6 +91,11 @@ hash = "544f5feadb5ae40179f00ec47e8762f16ad7e1753d5e8b03d9f2ac1ca6feb3d5"
 metafile = true
 
 [[files]]
+file = "mods/forge-config-api-port.pw.toml"
+hash = "e3105ac95dd1349c47dd52254b192d24695747c555129586289b37f6bc2f0326"
+metafile = true
+
+[[files]]
 file = "mods/immediatelyfast.pw.toml"
 hash = "47b39103c67345eef94bd424ca5ea177d6f5d1208ebf3f81f7df4ee3369da57e"
 metafile = true
@@ -218,6 +223,11 @@ metafile = true
 [[files]]
 file = "mods/towns-and-towers.pw.toml"
 hash = "91f4347e2f1ada6dda1289cf68ba213c658af4fb8e3516ca6367ae1c3a73f59e"
+metafile = true
+
+[[files]]
+file = "mods/underground-worlds.pw.toml"
+hash = "ef153901a0a188a1df79910669f60963b301d762ca113443e9030916306b1eb8"
 metafile = true
 
 [[files]]
